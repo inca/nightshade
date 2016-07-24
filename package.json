@@ -1,10 +1,10 @@
 {
   "name": "nightshade",
   "version": "0.0.0",
-  "description": "Minimal CSS conventions to replace frameworks",
+  "description": "CSS framework foundation",
   "scripts": {
-    "dev": "stylus -w -o index.css -u autoprefixer-stylus index.styl",
-    "build": "stylus -o indexc.ss -u autoprefixer-stylus -c index.styl"
+    "dev":   "stylus -w -o assets/site.css -u autoprefixer-stylus assets/site.styl",
+    "build": "stylus -c -o assets/site.css -u autoprefixer-stylus assets/site.styl"
   },
   "repository": {
     "type": "git",

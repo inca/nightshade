@@ -1,7 +1,5 @@
 // Typographics
 
-$font-stack ?= ptsans
-
 $font-main ?= Helvetica Neue, Helvetica, sans-serif;
 $font-weight-normal ?= 300
 $font-weight-bold ?= 500
@@ -35,17 +33,16 @@ $screen-large-min ?= 1024px
 
 // Color scheme
 
-$colors ?= 'base' 'primary' 'default' 'success' 'warning' 'critical'
+$colors ?= 'base' 'primary' 'secondary' 'default' 'success' 'warning' 'critical'
 
 $color-base ?= $WHITE
 $color-base-text ?= $BLUE_GREY_900
-$color-muted ?= $BLUE_GREY_600;
 $color-default ?= $GREY_200;
 
-$color-primary ?= $LIGHT_BLUE_700
+$color-primary ?= $LIGHT_BLUE_700;
 
 $color-success ?= $GREEN_600
-$color-warning ?= $YELLOW_700
+$color-warning ?= $AMBER_700
 $color-critical ?= $RED_800
 
 for $c in $colors {

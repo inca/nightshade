@@ -3,13 +3,52 @@
     <head>
         <meta charset="utf-8"/>
         <link rel="stylesheet"
-              href="./index.css"/>
+              href="assets/site.css"/>
+        <title>
+            Nightshade — base for team-specific CSS framework
+        </title>
     </head>
     <body>
-        <div class="container container--fixed">
-            <h1>Cheatsheet</h1>
+        <div class="showcase">
+            <div class="container container--column">
+                <h1>Nightshade</h1>
+                <p class="showcase-subtitle">
+                    Extensible base for application CSS frameworks
+                </p>
+                <p>
+                    <a class="btn btn--base-outline btn--large"
+                       href="https://github.com/inca/nightshade">
+                        GitHub
+                    </a>
+                </p>
+            </div>
+        </div>
 
-            <h2>Form controls</h2>
+        <div class="container container--column">
+
+            <h2>What's inside?</h2>
+
+            <ul>
+                <li>
+                    minimal conventions for creating CSS specs for your team
+                </li>
+                <li>
+                    4KB min/gzip CSS core containing only stuff you'll end up
+                    implementing anyway (buttons, inputs, grids and few helpers)
+                    — and nothing more
+                </li>
+                <li>
+                    easily extensible via Stylus (not intended for download-and-use)
+                </li>
+            </ul>
+
+            <p>
+                Please refer to
+                <a href="https://github.com/inca/nightshade">README on GitHub</a>
+                for conventions and usage.
+            </p>
+
+            <h2>Base styles</h2>
 
             <p>
                 All form controls are aligned to baseline in normal flow
@@ -32,6 +71,18 @@
                     Warning
                 </button>
                 <button class="btn btn--critical">
+                    Critical
+                </button>
+            </div>
+
+            <div class="block">
+                <button class="btn btn--primary-outline">
+                    Primary
+                </button>
+                <button class="btn btn--warning-outline">
+                    Warning
+                </button>
+                <button class="btn btn--critical-outline">
                     Critical
                 </button>
             </div>
@@ -135,6 +186,27 @@
 
             </div>
 
+            <h3>Glyph icons</h3>
+
+            <p>
+                Glyph icons are not included into Nightshade.
+                Just include your favorite icon font — and you're all set.
+            </p>
+
+            <p>
+                <button class="btn btn--primary">
+                    <i class="icon icon--check">
+                    </i>
+                    <span>Save</span>
+                </button>
+                <button class="btn btn--critical-outline">
+                    <i class="icon icon--cross">
+                    </i>
+                    <span>Cancel</span>
+                </button>
+            </p>
+
         </div>
+
     </body>
 </html>

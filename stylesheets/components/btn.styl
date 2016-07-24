@@ -1,3 +1,5 @@
+$btn-border-width ?= 1px;
+
 .btn {
   position: relative;
   z-index: 1;
@@ -9,7 +11,7 @@
   box-sizing: border-box;
   padding: 0 .75em;
   margin: 0;
-  border: 0 solid transparent;
+  border: $btn-border-width solid transparent;
   height: $ctl-height;
 
   vertical-align: baseline;
@@ -23,6 +25,7 @@
   white-space: nowrap
   text-indent: 0;
 
+  background: WHITE;
 
   &::-moz-focus-inner {
     border: 0;
@@ -31,6 +34,10 @@
 
   &:active, &.active {
     z-index: 2;
+  }
+
+  * + * {
+    margin-left: .5em;
   }
 
 }
@@ -44,7 +51,6 @@ for $c in $colors {
     background: transparent;
     color: $color;
     border-color: $color;
-    border-width: 2px;
 
     &:hover {
       border-color: $border;
@@ -95,13 +101,6 @@ for $c in $colors {
 .btn--hollow {
   border: 0;
   background: transparent;
-}
-
-.btn--circle {
-  padding: 0;
-  width: $ctl-height;
-  height: $ctl-height;
-  border-radius: 100%;
 }
 
 // Size modifiers

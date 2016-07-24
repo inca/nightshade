@@ -38,3 +38,19 @@
     display: none !important
   }
 }
+
+// Colors
+
+for $c in $colors {
+  .color--{$c} {
+    color: lookup('$color-' + $c);
+  }
+}
+
+// Sized
+
+for $s in $sizes {
+  .type-{$s} {
+    font-size: lookup('$size-' + $s);
+  }
+}
