@@ -1,0 +1,22 @@
+$clearfix() {
+  &::before, &::after {
+    content: '';
+    display: table;
+  }
+  &::after {
+    clear: both;
+  }
+}
+
+$color-text(colr) {
+  if (dark(colr)) {
+    lighten(colr, 90%);
+  } else {
+    darken(colr, 80%);
+  }
+}
+
+$color-border(colr) {
+  shade(colr, 15%);
+}
+

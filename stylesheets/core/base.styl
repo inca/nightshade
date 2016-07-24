@@ -1,0 +1,80 @@
+html {
+  min-height: 100vh;
+  font: $font-weight-normal $font-size/$line-height $font-main;
+  text-rendering: optimizeLegibility;
+  perspective: 1000px;
+
+  color: $body-color;
+  background: $body-background;
+}
+
+html:not(.loaded) * {
+  transition: none !important;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+       (-webkit-min-device-pixel-ratio: 192),
+       (min-resolution: 192dppx) {
+  html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+a {
+  color: $link-color;
+  cursor: pointer;
+
+  &:hover {
+    color: lighten($link-color, 20%);
+  }
+}
+
+label {
+  cursor: pointer;
+}
+
+strong, .strong {
+  font-weight: $font-weight-bold;
+}
+
+em, .em {
+  font-style: italic;
+}
+
+strike, .strike {
+  text-decoration: line-through
+}
+
+p, ul, ol, li, dl, dt, dd, figure, figcaption, table, pre {
+  margin: $gap 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: .618em 0;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.44rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+pre, code {
+  font-family: $font-code;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}

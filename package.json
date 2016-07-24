@@ -1,0 +1,26 @@
+{
+  "name": "nightshade",
+  "version": "0.0.0",
+  "description": "Minimal CSS conventions to replace frameworks",
+  "scripts": {
+    "dev": "stylus -w -o index.css -u autoprefixer-stylus index.styl",
+    "build": "stylus -o indexc.ss -u autoprefixer-stylus -c index.styl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inca/nightshade.git"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "Boris Okunskiy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inca/nightshade/issues"
+  },
+  "homepage": "https://inca.github.io/nightshade",
+  "devDependencies": {
+    "autoprefixer-stylus": "^0.9.4",
+    "stylus": "^0.54.5"
+  }
+}

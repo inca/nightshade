@@ -1,0 +1,40 @@
+.relative { position: relative }
+
+.block { margin: $gap 0 }
+.block--small { margin: $gap-small 0 }
+.block--large { margin: $gap-large 0 }
+
+.hidden { display: none }
+.no-overflow { overflow: hidden }
+
+.align-left { text-align: left }
+.align-center { text-align: center }
+.align-right { text-align: right }
+
+.screen { min-height: 100vh }
+
+// Responsive show/hide
+
+@media (max-width: $screen-small-max) {
+  .hide-s {
+    display: none !important
+  }
+}
+
+@media (min-width: $screen-medium-min) {
+  .show-s {
+    display: none !important
+  }
+}
+
+@media (min-width: $screen-large-min) {
+  .hide-l {
+    display: none !important
+  }
+}
+
+@media (max-width: $screen-medium-max) {
+  .show-l {
+    display: none !important
+  }
+}

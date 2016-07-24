@@ -1,0 +1,27 @@
+.ctl-group {
+  display: inline-flex;
+  flex-flow: row nowrap;
+
+  > * {
+    position: relative;
+    z-index: 2;
+    border-radius: 0;
+    margin-left: -1px;
+
+    &:first-child {
+      margin-left: 0;
+      border-top-left-radius: $ctl-radius;
+      border-bottom-left-radius: $ctl-radius;
+    }
+
+    &:last-child {
+      border-top-right-radius: $ctl-radius;
+      border-bottom-right-radius: $ctl-radius;
+    }
+  }
+
+  > input {
+    z-index: 1;
+  }
+
+}

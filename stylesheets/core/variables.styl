@@ -1,0 +1,69 @@
+// Typographics
+
+$font-stack ?= ptsans
+
+$font-main ?= Helvetica Neue, Helvetica, sans-serif;
+$font-weight-normal ?= 300
+$font-weight-bold ?= 500
+
+$font-code ?= Consolas, Liberation Mono, Menlo, Courier, monospace
+
+$font-size ?= 16px
+$line-height ?= 1.5
+
+// Metrics
+
+$gap ?= 1em
+$gap-small ?= ($gap / 2)
+$gap-large ?= ($gap * 2)
+
+$sizes ?= 'smaller' 'small' 'normal' 'large' 'larger'
+
+$type-larger ?= 1.5em
+$type-large ?= 1.2em
+$type-normal ?= 1em
+$type-small ?= 0.85em
+$type-smaller ?= 0.75em
+
+// Responsive widths
+
+$screen-small-max ?= 480px
+$screen-medium-min ?= 481px
+$screen-medium-middle ?= 640px
+$screen-medium-max ?= 1023px
+$screen-large-min ?= 1024px
+
+// Color scheme
+
+$colors ?= 'base' 'primary' 'default' 'success' 'warning' 'critical'
+
+$color-base ?= $WHITE
+$color-base-text ?= $BLUE_GREY_900
+$color-muted ?= $BLUE_GREY_600;
+$color-default ?= $GREY_200;
+
+$color-primary ?= $LIGHT_BLUE_700
+
+$color-success ?= $GREEN_600
+$color-warning ?= $YELLOW_700
+$color-critical ?= $RED_800
+
+for $c in $colors {
+  $color = lookup('$color-' + $c);
+  if (!lookup('$color-' + $c + '-text')) {
+    define('$color-' + $c + '-text', $color-text($color));
+  }
+  if (!lookup('$color-' + $c + '-border')) {
+    define('$color-' + $c + '-border', $color-border($color));
+  }
+}
+
+// UI
+
+$ctl-radius ?= 2px
+$ctl-height ?= 2em
+
+$link-color ?= $color-primary
+
+$body-background ?= $color-base
+$body-color ?= $color-base-text

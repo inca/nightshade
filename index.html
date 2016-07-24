@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet"
+              href="./index.css"/>
+    </head>
+    <body>
+        <div class="container container--fixed">
+            <h1>Cheatsheet</h1>
+
+            <h2>Form controls</h2>
+
+            <p>
+                All form controls are aligned to baseline in normal flow
+                (i.e. without grids).
+            </p>
+
+            <h3>Buttons</h3>
+
+            <div class="block">
+                <button class="btn btn--base">
+                    Base
+                </button>
+                <button class="btn btn--default">
+                    Default
+                </button>
+                <button class="btn btn--primary">
+                    Primary
+                </button>
+                <button class="btn btn--warning">
+                    Warning
+                </button>
+                <button class="btn btn--critical">
+                    Critical
+                </button>
+            </div>
+
+            <div class="block">
+                <button class="btn btn--primary">
+                    Normal
+                </button>
+                <button class="btn btn--primary"
+                        disabled>
+                    Disabled
+                </button>
+                <button class="btn btn--primary active">
+                    Active
+                </button>
+            </div>
+
+            <div class="block">
+                <button class="btn btn--primary btn--smaller">
+                    Smaller
+                </button>
+                <button class="btn btn--primary btn-small">
+                    Small
+                </button>
+                <button class="btn btn--primary">
+                    Normal
+                </button>
+                <button class="btn btn--primary btn--large">
+                    Large
+                </button>
+                <button class="btn btn--primary btn--larger">
+                    Larger
+                </button>
+                — all aligned to baseline
+            </div>
+
+            <h3>Inputs</h3>
+
+            <div class="block">
+                <input class="input input--smaller"
+                       value="Smaller"/>
+                <input class="input input--small"
+                       value="Small"/>
+                <input class="input"
+                       value="Normal"/>
+                <input class="input input--large"
+                       value="Large"/>
+                <input class="input input--larger"
+                       value="Larger"/>
+            </div>
+
+            <h3>Groups</h3>
+
+            <div class="block">
+                <div class="ctl-group">
+                    <button class="btn btn--primary">
+                        Before
+                    </button>
+                    <input class="input"/>
+                    <button class="btn btn--primary">
+                        After
+                    </button>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="ctl-group">
+                    <input class="input input--smaller"/>
+                    <button class="btn btn--primary btn--smaller">
+                        Smaller
+                    </button>
+                </div>
+
+                <div class="ctl-group">
+                    <input class="input input--small"/>
+                    <button class="btn btn--primary btn--small">
+                        Small
+                    </button>
+                </div>
+
+                <div class="ctl-group">
+                    <input class="input"/>
+                    <button class="btn btn--primary">
+                        Normal
+                    </button>
+                </div>
+
+                <div class="ctl-group">
+                    <input class="input input--large"/>
+                    <button class="btn btn--primary btn--large">
+                        Large
+                    </button>
+                </div>
+
+                <div class="ctl-group">
+                    <input class="input input--larger"/>
+                    <button class="btn btn--primary btn--larger">
+                        Larger
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+    </body>
+</html>

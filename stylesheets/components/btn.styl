@@ -1,0 +1,113 @@
+.btn {
+  position: relative;
+  z-index: 1;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+  padding: 0 .75em;
+  margin: 0;
+  border: 0 solid transparent;
+  height: $ctl-height;
+
+  vertical-align: baseline;
+  outline: 0;
+  cursor: pointer;
+  touch-action: manipulation;
+  user-select: none;
+
+  border-radius: $ctl-radius;
+  font: inherit;
+  white-space: nowrap
+  text-indent: 0;
+
+
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+
+  &:active, &.active {
+    z-index: 2;
+  }
+
+}
+
+for $c in $colors {
+  $color = lookup('$color-' + $c);
+  $text = lookup('$color-' + $c + '-text');
+  $border = lookup('$color-' + $c + '-border');
+
+  .btn--{$c}-outline, a.btn--{$c}-outline {
+    background: transparent;
+    color: $color;
+    border-color: $color;
+    border-width: 2px;
+
+    &:hover {
+      border-color: $border;
+      color: $border;
+    }
+  }
+
+  .btn--{$c}, a.btn--{$c} {
+    background: $color;
+    color: $text;
+    border-color: $border;
+    border-bottom-color: darken($border, 15%);
+
+    if dark($color) {
+      text-shadow: 0 1px 1px darken($color, 15%);
+    }
+
+    &:hover {
+      background: darken($color, 5%);
+    }
+
+    &:active, &.active {
+      background: darken($color, 12%);
+      border-color: darken($border, 15%);
+      box-shadow: 0 3px 5px darken($border, 10%) inset;
+      if dark($color) {
+        color: #fff;
+        text-shadow: 0 0 8px rgba(#fff, .15);
+      }
+    }
+
+    &[disabled] {
+      opacity: .5;
+      background: desaturate($color, 25%);
+      cursor: not-allowed;
+    }
+
+  }
+
+}
+
+.btn--block {
+  display: flex;
+  width: 100%;
+}
+
+// Preserve same metrics, but no visuals
+.btn--hollow {
+  border: 0;
+  background: transparent;
+}
+
+.btn--circle {
+  padding: 0;
+  width: $ctl-height;
+  height: $ctl-height;
+  border-radius: 100%;
+}
+
+// Size modifiers
+
+for $s in $sizes {
+  .btn--{$s} {
+    font-size: lookup('$type-' + $s);
+  }
+}
