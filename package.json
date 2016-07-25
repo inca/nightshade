@@ -1,6 +1,6 @@
 {
   "name": "nightshade",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "CSS framework foundation",
   "scripts": {
     "dev": "stylus -w -o assets/site.css -u autoprefixer-stylus assets/site.styl",
