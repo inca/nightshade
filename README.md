@@ -26,7 +26,7 @@ Good classnames:
 
   * `.my-component`
   * `.my-component-subComponent`
-  * `.myComponent--modifier`
+  * `.my-component--modifier`
 
 Bad classnames:
 
