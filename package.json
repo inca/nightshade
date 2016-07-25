@@ -4,7 +4,8 @@
   "description": "CSS framework foundation",
   "scripts": {
     "dev":   "stylus -w -o assets/site.css -u autoprefixer-stylus assets/site.styl",
-    "build": "stylus -c -o assets/site.css -u autoprefixer-stylus assets/site.styl"
+    "build": "stylus -c -o assets/site.css -u autoprefixer-stylus assets/site.styl",
+    "version": "npm run build && git add -A"
   },
   "repository": {
     "type": "git",

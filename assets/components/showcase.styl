@@ -1,9 +1,46 @@
 .showcase {
+  position: relative;
   display: flex;
-  background: $color-secondary;
-  color: $color-primary-text;
+  background: hsla(240deg, 24%, 32%, 1);
+  color: $color-base;
+  animation: colorshift 60s infinite alternate ease-in-out;
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,.5), rgba(0,0,0,0));
+  }
+
+  .container {
+    z-index: 2;
+  }
+
 }
 
 .showcase-subtitle {
+  margin: 2em 0;
   font-size: $type-large;
+}
+
+@keyframes colorshift {
+  0% {
+    background: hsla(240deg, 24%, 32%, 1);
+  }
+  25% {
+    background: hsla(160deg, 24%, 32%, 1);
+  }
+  50% {
+    background: hsla(270deg, 16%, 24%, 1);
+  }
+  75% {
+    background: hsla(0deg, 24%, 32%, 1);
+  }
+  100% {
+    background: hsla(240deg, 24%, 32%, 1);
+  }
 }
