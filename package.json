@@ -1,9 +1,9 @@
 {
   "name": "nightshade",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "CSS framework foundation",
   "scripts": {
-    "dev":   "stylus -w -o assets/site.css -u autoprefixer-stylus assets/site.styl",
+    "dev": "stylus -w -o assets/site.css -u autoprefixer-stylus assets/site.styl",
     "build": "stylus -c -o assets/site.css -u autoprefixer-stylus assets/site.styl",
     "version": "npm run build && git add -A"
   },
