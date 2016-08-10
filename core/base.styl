@@ -12,12 +12,14 @@ html:not(.loaded) * {
   transition: none !important;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2),
-       (-webkit-min-device-pixel-ratio: 192),
-       (min-resolution: 192dppx) {
-  html {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
+if ($font-antialias) {
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (-webkit-min-device-pixel-ratio: 192),
+         (min-resolution: 192dppx) {
+    html {
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+    }
   }
 }
 
