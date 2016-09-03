@@ -1,0 +1,76 @@
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.grid--top { align-items: flex-start }
+.grid--baseline { align-items: baseline }
+.grid--distribute { justify-content: space-between }
+.grid--scatter { justify-content: space-around }
+
+.grid--gap {
+  margin: -($gap / 2);
+
+  &.block {
+    margin-top: ($gap / 2);
+    margin-bottom: ($gap / 2);
+  }
+
+  > .cell {
+    margin: ($gap / 2);
+  }
+}
+
+.cell {
+  flex: 100%;
+  box-sizing: border-box;
+  min-width: 1px;
+}
+
+.cell--min { flex: 0 0 auto }
+
+.cell--1of1 { flex: 100% }
+.cell--1of2 { flex: 50% }
+.cell--1of3 { flex: 33.33% }
+.cell--2of3 { flex: 66.66% }
+.cell--1of4 { flex: 25% }
+.cell--3of4 { flex: 75% }
+
+for i in (1..8) {
+  .cell--{i} { flex: i }
+}
+
+@media (min-width: screen-medium-min) {
+
+  .cell--m-min { flex: 0 0 auto}
+
+  .cell--m-1of1 { flex: 100% }
+  .cell--m-1of2 { flex: 50% }
+  .cell--m-1of3 { flex: 33.33% }
+  .cell--m-2of3 { flex: 66.66% }
+  .cell--m-1of4 { flex: 25% }
+  .cell--m-3of4 { flex: 75% }
+
+  for i in (1..8) {
+    .cell--m-{i} { flex: i }
+  }
+
+}
+
+@media (min-width: screen-large-min) {
+
+  .cell--l-min { flex: 0 0 auto }
+
+  .cell--l-1of1 { flex: 100% }
+  .cell--l-1of2 { flex: 50% }
+  .cell--l-1of3 { flex: 33.33% }
+  .cell--l-2of3 { flex: 66.66% }
+  .cell--l-1of4 { flex: 25% }
+  .cell--l-3of4 { flex: 75% }
+
+  for i in (1..8) {
+    .cell--l-{i} { flex: i }
+  }
+
+}
