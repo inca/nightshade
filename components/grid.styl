@@ -5,7 +5,9 @@
 }
 
 .grid--top { align-items: flex-start }
+.grid--bottom { align-items: flex-end }
 .grid--baseline { align-items: baseline }
+.grid--stretch { align-items: stretch }
 .grid--distribute { justify-content: space-between }
 .grid--scatter { justify-content: space-around }
 
@@ -27,6 +29,12 @@
   box-sizing: border-box;
   min-width: 1px;
 }
+
+.cell--top { align-self: flex-start }
+.cell--bottom { align-self: flex-end }
+.cell--center { align-self: center }
+.cell--baseline { align-self: baseline }
+.cell--stretch { align-self: stretch }
 
 .cell--min { flex: 0 0 auto }
 
