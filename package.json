@@ -1,6 +1,6 @@
 {
     "name": "nightshade",
-    "version": "1.0.0",
+    "version": "1.0.0-0",
     "description": "Vue UI library & design system",
     "type": "module",
     "exports": {
@@ -14,7 +14,9 @@
     ],
     "scripts": {
         "dev": "vite --host",
-        "build": "NODE_ENV=production vite build"
+        "build": "NODE_ENV=production vite build",
+        "prepublish": "npm run build",
+        "postpublish": "git push origin main --tags"
     },
     "author": "Boris Okunskiy",
     "license": "ISC",
