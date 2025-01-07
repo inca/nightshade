@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+img,
+form {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    font-size: var(--font-size);
+    font-family: var(--font-main);
+    font-weight: var(--font-weight);
+    line-height: var(--line-height);
+
+    color: var(--text-color);
+    background: var(--background-color);
+
+    text-rendering: optimizeLegibility;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--link-color-hover);
+}
+
+button,
+input,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+h1 {
+    font-weight: var(--font-weight-bold);
+    font-size: 32px;
+    line-height: 32px;
+    margin: var(--sp3) 0;
+}
+
+h2 {
+    font-weight: var(--font-weight);
+    font-size: 28px;
+    line-height: 28px;
+    margin: var(--sp2) 0;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: var(--font-weight-bold);
+    margin: var(--sp2) 0;
+}
+
+h4 {
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--sp2);
+    margin: var(--sp) 0;
+}
+
+h5 {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight);
+    color: var(--color-text-1);
+    text-transform: uppercase;
+    margin: var(--sp) 0;
+}
+
+h6 {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight);
+    color: var(--color-text-1);
+    text-transform: uppercase;
+    margin: var(--sp) 0;
+}
+
+strong {
+    font-weight: var(--font-weight-bold);
+}
+
+kbd {
+    position: relative;
+
+    display: inline-block;
+    text-align: center;
+
+    border: 1px solid var(--color-base-2);
+    border-bottom-width: 2px;
+    border-bottom-color: var(--color-base-3);
+    height: 1.5em;
+    min-width: 1.5em;
+    padding: 0 .25em;
+    margin: 0 2px;
+    border-radius: 4px;
+
+    font: inherit;
+    background: var(--color-base-0);
+    background: radial-gradient(
+        100% 100% at 100% 0%,
+        var(--color-base-0) 0%,
+        var(--color-base-1) 100%);
+}
+
+kbd::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 2px;
+    bottom: -4px;
+    left: -3px;
+    right: -3px;
+    border-radius: var(--border-radius-small);
+    border: 1px solid var(--color-base-4);
+}
+
+code {
+    font: 12px/1.4 var(--font-monospace)
+}
+
+:not(pre) > code {
+    color: var(--code-color);
+    white-space: nowrap;
+}
+
+pre {
+    line-height: 1.2em;
+    white-space: pre-wrap;
+}

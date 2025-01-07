@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Futura PT C';
+    src: local('Futura PT Book'), local('FuturaPT-Book'),
+        url('FuturaPT-Book.eot?#iefix') format('embedded-opentype'),
+        url('FuturaPT-Book.woff') format('woff'),
+        url('FuturaPT-Book.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura PT C';
+    src: local('Futura PT Book Oblique'), local('FuturaPT-BookObl'),
+        url('FuturaPT-BookObl.eot?#iefix') format('embedded-opentype'),
+        url('FuturaPT-BookObl.woff') format('woff'),
+        url('FuturaPT-BookObl.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura PT C';
+    src: local('Futura PT Medium'), local('FuturaPT-Medium'),
+        url('FuturaPT-Medium.eot?#iefix') format('embedded-opentype'),
+        url('FuturaPT-Medium.woff') format('woff'),
+        url('FuturaPT-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura PT C';
+    src: local('Futura PT Medium Oblique'), local('FuturaPT-MediumObl'),
+        url('FuturaPT-MediumObl.eot?#iefix') format('embedded-opentype'),
+        url('FuturaPT-MediumObl.woff') format('woff'),
+        url('FuturaPT-MediumObl.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura PT C';
+    src: local('Futura PT Light'), local('FuturaPT-Light'),
+        url('FuturaPT-Light.eot?#iefix') format('embedded-opentype'),
+        url('FuturaPT-Light.woff') format('woff'),
+        url('FuturaPT-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura PT C';
+    src: local('Futura PT Light Oblique'), local('FuturaPT-LightObl'),
+        url('FuturaPT-LightObl.eot?#iefix') format('embedded-opentype'),
+        url('FuturaPT-LightObl.woff') format('woff'),
+        url('FuturaPT-LightObl.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}

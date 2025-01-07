@@ -1,0 +1,106 @@
+/* Fade */
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity .3s;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+
+/* Fade Scale */
+
+.fade-scale-enter-active,
+.fade-scale-leave-active {
+    transition: opacity .5s, transform .5s;
+}
+
+.fade-scale-enter-from {
+    transform: scale(.75);
+    opacity: 0;
+}
+
+.fade-scale-leave-to {
+    transform: scale(1.25);
+    opacity: 0;
+}
+
+/* Fade Squash */
+
+.fade-squash-enter-active,
+.fade-squash-leave-active {
+    transition: opacity .25s, transform .25s;
+}
+
+.fade-squash-enter-from,
+.fade-squash-leave-to {
+    transform: scale(10, .1);
+    opacity: 0;
+}
+
+/* Fade Swipe */
+
+.fade-swipe-enter-active,
+.fade-swipe-leave-active {
+    transition: opacity .25s, transform .25s;
+}
+
+.fade-swipe-enter-from {
+    transform: translate(-96px, -32px);
+    opacity: 0;
+}
+
+.fade-swipe-leave-to {
+    transform: translate(96px, -32px);
+    opacity: 0;
+}
+
+/* Fade Shove */
+
+.fade-shove-enter-active,
+.fade-shove-leave-active {
+    transition: opacity .3s, transform .3s;
+}
+
+.fade-shove-enter-from {
+    opacity: 0;
+}
+
+.fade-shove-leave-to {
+    transform: translate(16px, -16px) scale(.95);
+    opacity: 0;
+}
+
+/* Fade + Directional slide */
+
+.fade-left-enter-active, .fade-left-leave-active,
+.fade-right-enter-active, .fade-right-leave-active,
+.fade-top-enter-active, .fade-top-leave-active,
+.fade-bottom-enter-active, .fade-bottom-leave-active {
+    transition: opacity .25s, transform .25s;
+}
+
+.fade-left-enter-from, .fade-left-leave-to,
+.fade-right-enter-from, .fade-right-leave-to,
+.fade-top-enter-from, .fade-top-leave-to,
+.fade-bottom-enter-from , .fade-bottom-leave-to {
+    opacity: 0;
+}
+
+.fade-left-enter-from, .fade-left-leave-to {
+    transform: translate(16px, 0);
+}
+
+.fade-right-enter-from, .fade-right-leave-to {
+    transform: translate(-16px, 0);
+}
+
+.fade-top-enter-from, .fade-top-leave-to {
+    transform: translate(0, 16px);
+}
+
+.fade-bottom-enter-from, .fade-bottom-leave-to {
+    transform: translate(0, -16px);
+}

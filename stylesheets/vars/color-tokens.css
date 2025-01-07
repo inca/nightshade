@@ -1,0 +1,128 @@
+:root {
+
+    --color-base-0: hsl(280deg, 10%, 100%);
+    --color-base-1: hsl(280deg, 10%, 96%);
+    --color-base-2: hsl(280deg, 10%, 92%);
+    --color-base-3: hsl(280deg, 10%, 88%);
+    --color-base-4: hsl(280deg, 10%, 80%);
+
+    --color-text-0: hsl(280deg, 10%, 20%);
+    --color-text-1: hsl(280deg, 10%, 48%);
+    --color-text-2: hsl(280deg, 10%, 64%);
+    --color-text-3: hsl(280deg, 10%, 72%);
+    --color-text-4: hsl(280deg, 10%, 78%);
+
+    --color-default: var(--color-text-0);
+    --color-default-0: var(--color-base-0);
+    --color-default-1: var(--color-base-1);
+    --color-default-2: var(--color-base-2);
+    --color-default-3: var(--color-base-3);
+    --color-default-4: var(--color-base-4);
+    --color-default-text: var(--color-text-0);
+    --color-default-surface-top: var(--color-default-1);
+    --color-default-surface-bottom: var(--color-default-3);
+    --color-default-focus: var(--color-primary-focus);
+    --color-default-outline: var(--color-default-2);
+    --color-default-shadow: var(--color-default-4);
+
+    --color-primary: var(--color-primary-2);
+    --color-primary-0: hsl(310deg, 64%, 75%);
+    --color-primary-1: hsl(310deg, 64%, 64%);
+    --color-primary-2: hsl(310deg, 64%, 50%);
+    --color-primary-3: hsl(310deg, 64%, 44%);
+    --color-primary-4: hsl(310deg, 64%, 36%);
+    --color-primary-text: #fff;
+    --color-primary-surface-top: var(--color-primary-1);
+    --color-primary-surface-bottom: var(--color-primary-3);
+    --color-primary-focus: var(--color-primary-0);
+    --color-primary-outline: var(--color-primary-2);
+    --color-primary-shadow: var(--color-primary-4);
+
+    --color-secondary: var(--color-secondary-2);
+    --color-secondary-0: hsl(290deg, 50%, 75%);
+    --color-secondary-1: hsl(290deg, 50%, 64%);
+    --color-secondary-2: hsl(290deg, 50%, 50%);
+    --color-secondary-3: hsl(290deg, 50%, 44%);
+    --color-secondary-4: hsl(290deg, 50%, 36%);
+    --color-secondary-text: #fff;
+    --color-secondary-surface-top: var(--color-secondary-1);
+    --color-secondary-surface-bottom: var(--color-secondary-3);
+    --color-secondary-focus: var(--color-secondary-0);
+    --color-secondary-outline: var(--color-secondary-2);
+    --color-secondary-shadow: var(--color-secondary-4);
+
+    --color-tertiary: var(--color-tertiary-2);
+    --color-tertiary-0: hsl(176deg, 50%, 78%);
+    --color-tertiary-1: hsl(176deg, 50%, 72%);
+    --color-tertiary-2: hsl(176deg, 50%, 50%);
+    --color-tertiary-3: hsl(176deg, 50%, 44%);
+    --color-tertiary-4: hsl(176deg, 50%, 36%);
+    --color-tertiary-text: #fff;
+    --color-tertiary-surface-top: var(--color-tertiary-1);
+    --color-tertiary-surface-bottom: var(--color-tertiary-3);
+    --color-tertiary-focus: var(--color-tertiary-0);
+    --color-tertiary-outline: var(--color-tertiary-2);
+    --color-tertiary-shadow: var(--color-tertiary-4);
+
+    --color-success: var(--color-success-2);
+    --color-success-0: hsl(96deg, 60%, 76%);
+    --color-success-1: hsl(96deg, 60%, 68%);
+    --color-success-2: hsl(96deg, 60%, 50%);
+    --color-success-3: hsl(96deg, 60%, 44%);
+    --color-success-4: hsl(96deg, 60%, 36%);
+    --color-success-text: #fff;
+    --color-success-surface-top: var(--color-success-1);
+    --color-success-surface-bottom: var(--color-success-3);
+    --color-success-focus: var(--color-success-0);
+    --color-success-outline: var(--color-success-2);
+    --color-success-shadow: var(--color-success-4);
+
+    --color-warning: var(--color-warning-3);
+    --color-warning-0: hsl(48deg, 88%, 85%);
+    --color-warning-1: hsl(48deg, 88%, 80%);
+    --color-warning-2: hsl(48deg, 88%, 60%);
+    --color-warning-3: hsl(48deg, 88%, 48%);
+    --color-warning-4: hsl(48deg, 88%, 40%);
+    --color-warning-text: #000;
+    --color-warning-surface-top: var(--color-warning-1);
+    --color-warning-surface-bottom: var(--color-warning-3);
+    --color-warning-focus: var(--color-warning-0);
+    --color-warning-outline: var(--color-warning-2);
+    --color-warning-shadow: var(--color-warning-4);
+
+    --color-danger: var(--color-danger-2);
+    --color-danger-0: hsl(350deg, 88%, 75%);
+    --color-danger-1: hsl(350deg, 88%, 64%);
+    --color-danger-2: hsl(350deg, 88%, 50%);
+    --color-danger-3: hsl(350deg, 88%, 44%);
+    --color-danger-4: hsl(350deg, 88%, 32%);
+    --color-danger-text: #fff;
+    --color-danger-surface-top: var(--color-danger-1);
+    --color-danger-surface-bottom: var(--color-danger-3);
+    --color-danger-focus: var(--color-danger-0);
+    --color-danger-outline: var(--color-danger-2);
+    --color-danger-shadow: var(--color-danger-4);
+
+}
+
+.Theme-dark {
+
+    --color-base-0: hsl(280deg, 5%, 16%);
+    --color-base-1: hsl(280deg, 5%, 20%);
+    --color-base-2: hsl(280deg, 5%, 24%);
+    --color-base-3: hsl(280deg, 5%, 27%);
+    --color-base-4: hsl(280deg, 5%, 32%);
+
+    --color-text-0: hsl(280deg, 10%, 96%);
+    --color-text-1: hsl(280deg, 10%, 72%);
+    --color-text-2: hsl(280deg, 10%, 50%);
+    --color-text-3: hsl(280deg, 10%, 44%);
+    --color-text-4: hsl(280deg, 10%, 40%);
+
+    --color-default-0: var(--color-base-4);
+    --color-default-1: var(--color-base-3);
+    --color-default-2: var(--color-base-2);
+    --color-default-3: var(--color-base-1);
+    --color-default-4: var(--color-base-0);
+
+}

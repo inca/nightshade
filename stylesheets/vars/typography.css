@@ -1,0 +1,16 @@
+:root {
+
+    --font-main: sans-serif;
+    --font-monospace: monospace;
+
+    --font-size: 16px;
+    --font-size-small: 14px;
+    --font-size-smaller: 12px;
+    --font-size-large: 18px;
+    --font-size-larger: 20px;
+
+    --font-weight: 400;
+    --font-weight-bold: 500;
+
+    --line-height: 1.5em;
+}

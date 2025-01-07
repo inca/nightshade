@@ -1,0 +1,15 @@
+{
+    "extends": "./tsconfig.base.json",
+    "include": [
+        "**/*.ts",
+        "**/*.js",
+        "**/*.vue"
+    ],
+    "compilerOptions": {
+        "noEmit": true,
+        "lib": [
+            "DOM",
+            "ES2022"
+        ]
+    }
+}
