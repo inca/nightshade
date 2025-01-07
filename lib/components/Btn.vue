@@ -122,6 +122,8 @@ export default {
     --Btn-shadow-color: transparent;
 
     -webkit-appearance: none;
+    appearance: none;
+
     position: relative;
     z-index: 1;
     margin: 0;

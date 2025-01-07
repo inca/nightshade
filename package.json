@@ -15,8 +15,8 @@
     "scripts": {
         "dev": "vite --host",
         "build": "NODE_ENV=production vite build",
-        "prepublish": "npm run build",
-        "postpublish": "git push origin main --tags"
+        "version": "npm run build",
+        "postversion": "npm publish --access=public && git push --tags origin main"
     },
     "author": "Boris Okunskiy",
     "license": "ISC",

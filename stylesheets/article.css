@@ -1,0 +1,21 @@
+article a {
+    color: var(--link-color);
+}
+
+article a:hover {
+    color: var(--link-color-hover);
+}
+
+article  code {
+    font: 12px/1.4 var(--font-monospace)
+}
+
+article :not(pre) > code {
+    color: var(--code-color);
+    white-space: nowrap;
+}
+
+article pre {
+    line-height: 1.2em;
+    white-space: pre-wrap;
+}

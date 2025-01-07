@@ -4,5 +4,6 @@
 @import './vars/commons.css';
 
 @import './base.css';
+@import './article.css';
 @import './util.css';
 @import './transitions.css';
