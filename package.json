@@ -1,5 +1,5 @@
 {
-    "name": "@inca/nightshade",
+    "name": "nightshade",
     "version": "1.0.0",
     "description": "Vue UI library & design system",
     "type": "module",
