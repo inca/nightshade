@@ -1,9 +1,0 @@
-@import './vars/spacing.css';
-@import './vars/typography.css';
-@import './vars/color-tokens.css';
-@import './vars/commons.css';
-
-@import './base.css';
-@import './article.css';
-@import './util.css';
-@import './transitions.css';

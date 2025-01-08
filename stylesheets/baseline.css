@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+img,
+form {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    font-size: var(--font-size);
+    font-family: var(--font-main);
+    font-weight: var(--font-weight);
+    line-height: var(--line-height);
+
+    color: var(--text-color);
+    background: var(--background-color);
+
+    text-rendering: optimizeLegibility;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button,
+input,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+input[type="checkbox"],
+input[type="radio"],
+input[type="range"],
+input[type="button"],
+input[type="submit"],
+button {
+    cursor: pointer;
+}
+
+b, strong {
+    font-weight: var(--font-weight-bold);
+}

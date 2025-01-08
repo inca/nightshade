@@ -1,5 +1,6 @@
 <template>
     <div class="Root">
+        <Usage />
         <DesignSystem />
         <GalleryBtn />
     </div>
@@ -8,12 +9,14 @@
 <script>
 import DesignSystem from './DesignSystem.vue';
 import GalleryBtn from './GalleryBtn.vue';
+import Usage from './Usage.vue';
 
 export default {
 
     components: {
         DesignSystem,
         GalleryBtn,
+        Usage,
     }
 
 };

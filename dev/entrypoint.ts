@@ -1,4 +1,4 @@
-import '../stylesheets/index.css';
+import '../stylesheets/full.css';
 import './theme.css';
 
 import { createApp } from 'vue';

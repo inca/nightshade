@@ -1,0 +1,26 @@
+:root {
+    --background-color: var(--color-base-0);
+    --text-color: var(--color-text-0);
+
+    --link-color: var(--color-primary-2);
+    --link-color-hover: var(--color-primary-1);
+
+    --code-color: var(--color-secondary);
+
+    --color-subtle: var(--color-text-1);
+    --color-sublime: var(--color-text-2);
+
+    --border-radius: var(--sp2);
+    --border-radius-small: var(--sp);
+    --border-radius-large: var(--sp4);
+
+    --input-size: var(--sp4);
+    --input-size-small: var(--sp3);
+    --input-size-smaller: var(--sp2);
+    --input-size-large: var(--sp5);
+    --input-size-larger: var(--sp6);
+}
+
+.Theme-dark {
+
+}

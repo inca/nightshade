@@ -1,5 +1,4 @@
 import vue from '@vitejs/plugin-vue';
-import { fileURLToPath } from 'url';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
@@ -19,11 +18,6 @@ export default defineConfig({
     esbuild: {
         legalComments: 'none',
         keepNames: true,
-    },
-    resolve: {
-        alias: {
-            '@': fileURLToPath(new URL('./src', import.meta.url))
-        },
     },
     server: {
         port: 8881

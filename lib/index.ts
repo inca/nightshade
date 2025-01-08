@@ -1,5 +1,3 @@
-import '../stylesheets/index.css';
-
 import Btn from './components/Btn.vue';
 import Circle from './components/Circle.vue';
 import HGroup from './components/HGroup.vue';

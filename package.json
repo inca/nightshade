@@ -5,7 +5,7 @@
     "type": "module",
     "exports": {
         ".": "./dist/nightshade.js",
-        "./stylesheets.css": "./dist/nightshade.css",
+        "./stylesheets/components.css": "./dist/nightshade.css",
         "./stylesheets/*": "./stylesheets/*"
     },
     "files": [
