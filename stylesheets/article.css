@@ -1,21 +1,33 @@
-article a {
-    color: var(--link-color);
-}
+article {
 
-article a:hover {
-    color: var(--link-color-hover);
-}
+    a {
+        color: var(--link-color);
+    }
 
-article  code {
-    font: 12px/1.4 var(--font-monospace)
-}
+    a:hover {
+        color: var(--link-color-hover);
+    }
 
-article :not(pre) > code {
-    color: var(--code-color);
-    white-space: nowrap;
-}
+    code {
+        font: 12px/1.4 var(--font-monospace)
+    }
 
-article pre {
-    line-height: 1.2em;
-    white-space: pre-wrap;
+    :not(pre) > code {
+        color: var(--code-color);
+        white-space: nowrap;
+    }
+
+    pre {
+        line-height: 1.2em;
+        white-space: pre-wrap;
+    }
+
+    p, ul, ol, dl {
+        margin: 1em 0;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        margin: 1.5em 0 .5em;
+    }
+
 }

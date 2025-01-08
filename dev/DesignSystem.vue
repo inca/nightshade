@@ -12,6 +12,7 @@
                 <li><a href="#spacing">Spacing</a></li>
                 <li><a href="#typography">Typography</a></li>
                 <li><a href="#colors">Colors</a></li>
+                <li><a href="#conventions">Conventions</a></li>
             </ul>
 
             <h3 id="spacing">Spacing</h3>
@@ -31,9 +32,13 @@
 
             <pre><code>{{ typographyCss }}</code></pre>
 
+            <p>
+                It is also advidable to introduce alternative font families (e.g. for headings).
+            </p>
+
             <h3 id="colors">Colors</h3>
             <p>
-                Nightshade features a simple yet efficient approach to manage dual-themed application colors scheme.
+                Nightshade follows a simple yet efficient approach to manage dual-themed application colors scheme.
             </p>
 
             <h4>Color tokens</h4>
@@ -42,10 +47,10 @@
 
             <ul>
                 <li>
-                    <strong>Basis tokens</strong> govern the main text and background colors
+                    <strong>Basis tokens</strong> govern the main text and background colors.
                 </li>
                 <li>
-                    <strong>Semantic tokens</strong> provide the color palette for various UI components, such as buttons, inputs, etc. They are made to look consistent with the text and background colors defined by basis tokens.
+                    <strong>Semantic tokens</strong> provide the color palette for various UI components, such as buttons, inputs, etc. They are made to look consistent with the text and background colors defined by the basis tokens.
                 </li>
                 <li>
                     <strong>Semantic variables</strong> are derived from semantic tokens and provide meaningful CSS variables for use in UI elements.
@@ -57,7 +62,7 @@
             </p>
 
             <p>
-                This approach allows to define a minimalistic color grade for basis and surface tokens and then use these color grades to define more meaningful semantic tokens. Such approach makes it easy to customize the colors globally whilst maintaining dual-theme compatibility with minimal effort.
+                With this approach you first define a minimalistic color grade for basis and surface tokens and then use these color grades to define more meaningful semantic tokens. Such approach makes it easy to customize the colors globally whilst maintaining dual-theme compatibility with minimal effort.
             </p>
 
             <h4>Basis tokens</h4>
@@ -205,6 +210,53 @@
             <p>
                 When doing so, consider matching the states of primary UI components: buttons and inputs.
             </p>
+
+            <h3 id="conventions">Conventions</h3>
+            <p>
+                Last but not least, consistent conventions for CSS variables facilitate a smooth development experience and ensures the cohesiveness between standard and custom components.
+            </p>
+
+            <h4>Component naming</h4>
+            <ul>
+                <li>
+                    Component names are PascalCased, e.g. <code>ProgressBar</code>.
+                </li>
+                <li>
+                    Components use scoped styles.
+                </li>
+                <li>
+                    All elements inside components are also PascalCased and do not require prefix. E.g. use <code>Label</code>, not <code>ProgressBar-Label</code>.
+                </li>
+                <li>
+                    PascalCase thus means "component-scoped". There should be no global CSS with PascalCase.
+                </li>
+                <li>
+                    State classes use kebab-case suffixes, e.g. <code>.ProgressBar-active</code>.
+                </li>
+            </ul>
+
+            <h4>Global styles</h4>
+            <ul>
+                <li>
+                    Global styles are kebab-cased, e.g. <code>.color-primary</code>.
+                </li>
+                <li>
+                    Nightshare ships some <a href="https://github.com/inca/nightshade/blob/main/stylesheets/util.css" target="_blank">utility classes</a>, also in kebab-case. When adding custom global styles, use kebab-case to avoid introducing conflicts with scoped styles.
+                </li>
+            </ul>
+
+            <h4>CSS variables</h4>
+            <ul>
+                <li>
+                    CSS variables use the following syntax: <code>--&lt;context&gt;-&lt;property&gt;</code>. For example, in <code>--color-tertiary-surface-top</code> the context is <code>color-tertiary</code> and the property is <code>surface-top</code>.
+                </li>
+                <li>
+                    Component-scoped CSS variables start with PascalCased component name and use kebab-case property designation, e.g. <code>--ProgressBar-track-color</code>.
+                </li>
+                <li>
+                    Property designations should have a natural word ordering and should resemble the core CSS property names (e.g. <code>--ProgressBar-font-size</code>).
+                </li>
+            </ul>
         </article>
     </div>
 </template>

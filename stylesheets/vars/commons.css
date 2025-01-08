@@ -19,10 +19,31 @@
     --input-size-large: var(--sp5);
     --input-size-larger: var(--sp6);
 
-    --color-overlay-backdrop: rgba(0,0,0,.08);
-    --color-overlay-shadow: rgba(0,0,0,.15);
+    --h1-font-size: 32px;
+    --h1-font-weight: var(--font-weight-bold);
+    --h1-color: var(--color-text-0);
+
+    --h2-font-size: 28px;
+    --h2-font-weight: var(--font-weight);
+    --h2-color: var(--color-text-0);
+
+    --h3-font-size: 24px;
+    --h3-font-weight: var(--font-weight-bold);
+    --h3-color: var(--color-text-0);
+
+    --h4-font-size: 20px;
+    --h4-font-weight: var(--font-weight-bold);
+    --h4-color: var(--color-text-0);
+
+    --h5-font-size: 16px;
+    --h5-font-weight: var(--font-weight-bold);
+    --h5-color: var(--color-text-1);
+
+    --h6-font-size: 16px;
+    --h6-font-weight: var(--font-weight);
+    --h6-color: var(--color-text-2);
 }
 
 .Theme-dark {
-    --color-overlay-backdrop: rgba(255,255,255,.04);
+
 }
