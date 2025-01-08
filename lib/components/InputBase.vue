@@ -50,7 +50,7 @@ export default {
 .InputBase {
     --InputBase-size: var(--input-size);
 
-    --InputBase-padding: 0;
+    --InputBase-padding: var(--sp1-5);
     --InputBase-font-size: var(--font-size);
     --InputBase-text-color: var(--color-text-0);
     --InputBase-surface: var(--color-base-0);
@@ -139,10 +139,12 @@ export default {
 .InputBase-small {
     --InputBase-size: var(--input-size-small);
     --InputBase-font-size: var(--font-size-small);
+    --InputBase-padding: var(--sp);
 }
 
 .InputBase-large {
     --InputBase-size: var(--input-size-large);
     --InputBase-font-size: var(--font-size-large);
+    --InputBase-padding: var(--sp2);
 }
 </style>

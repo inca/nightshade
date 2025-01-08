@@ -2,7 +2,7 @@
     <article>
         <h2>Inputs</h2>
 
-        <VGroup>
+        <VGroup gap="2">
 
             <HGroup>
                 <HGroup tagName="label">
@@ -66,7 +66,7 @@
             You can place arbitrary content into its default slot.
         </p>
 
-        <VGroup>
+        <VGroup gap="2">
 
             <HGroup align="end">
                 <InputBase
@@ -78,7 +78,7 @@
                     :disabled="disabled"
                     :invalid="invalid"
                     :size="size">
-                    <div class="pad-1" tabindex="0">
+                    <div tabindex="0">
                         The text above is <strong>{{ text }}</strong>
                     </div>
                 </InputBase>
@@ -90,7 +90,6 @@
             </HGroup>
 
             <InputBase
-                label="Optional label"
                 :pseudoFocus="focus"
                 :pseudoHover="hover"
                 :round="round"
@@ -98,11 +97,11 @@
                 :invalid="invalid"
                 :size="size"
                 :fixedHeight="false">
-                <VGroup class="pad-1">
+                <VGroup>
                     <p>Can also be multiline and contain other elements.</p>
                     <HGroup>
                         <Btn
-                            label="Side button"
+                            label="Some button"
                             kind="default"
                             :round="round"
                             :size="size" />
