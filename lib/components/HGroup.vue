@@ -6,6 +6,9 @@
             `HGroup-align-${align}`,
             `HGroup-justify-${justify}`,
             `HGroup-gap-${gap}`,
+            {
+                'HGroup-wrap': wrap,
+            }
         ]">
         <slot />
     </component>
@@ -19,6 +22,7 @@ export default {
         align: { type: String, default: 'center' },
         justify: { type: String },
         gap: { type: String, default: '1' },
+        wrap: { type: Boolean, default: false },
     }
 
 };
@@ -46,4 +50,6 @@ export default {
 .HGroup-gap-1 { gap: var(--sp) }
 .HGroup-gap-2 { gap: var(--sp2) }
 .HGroup-gap-3 { gap: var(--sp3) }
+
+.HGroup-wrap { flex-wrap: wrap; }
 </style>

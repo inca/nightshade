@@ -2,7 +2,7 @@
     <article>
         <h2>Buttons</h2>
         <VGroup>
-            <HGroup>
+            <HGroup wrap>
                 <HGroup tagName="label">
                     <input v-model="disabled" type="checkbox" />
                     <div>Disabled</div>
@@ -27,8 +27,24 @@
                     <input v-model="outline" type="checkbox" />
                     <div>Outline</div>
                 </HGroup>
+                <HGroup tagName="label">
+                    <input
+                        v-model="size"
+                        type="checkbox"
+                        true-value="small"
+                        false-value="" />
+                    <div>Small</div>
+                </HGroup>
+                <HGroup tagName="label">
+                    <input
+                        v-model="icon"
+                        type="checkbox"
+                        true-value="far fa-check-circle"
+                        false-value="" />
+                    <div>Icon</div>
+                </HGroup>
             </HGroup>
-            <HGroup>
+            <HGroup wrap>
                 <Btn
                     v-for="token, index of tokens"
                     :key="index"
@@ -39,9 +55,11 @@
                     :pseudoHover="hover"
                     :pseudoActive="active"
                     :round="round"
-                    :outline="outline" />
+                    :outline="outline"
+                    :size="size"
+                    :icon="icon" />
             </HGroup>
-            <HGroup>
+            <HGroup wrap>
                 <Btn
                     v-for="token, index of tokens"
                     :key="index"
@@ -52,7 +70,9 @@
                     :pseudoHover="hover"
                     :pseudoActive="active"
                     :round="round"
-                    :outline="outline" />
+                    :outline="outline"
+                    :size="size"
+                    :icon="icon" />
             </HGroup>
         </VGroup>
     </article>
@@ -69,6 +89,8 @@ export default {
             active: false,
             round: false,
             outline: false,
+            size: undefined,
+            icon: undefined,
         };
     },
 

@@ -112,6 +112,7 @@ export default {
 .Btn {
     --Btn-padding: var(--sp1-5);
     --Btn-size: var(--input-size);
+    --Btn-font-size: var(--font-size);
 
     --Btn-text-color: inherit;
     --Btn-outline-color: transparent;
@@ -142,9 +143,11 @@ export default {
     border: 0;
     border-radius: var(--Btn-border-radius);
     cursor: pointer;
-    font: inherit;
     user-select: none;
     overflow: hidden;
+
+    font-family: inherit;
+    font-size: var(--Btn-font-size);
 
     color: var(--Btn-text-color);
     outline: 2px solid var(--Btn-outline-color-effective);
@@ -192,6 +195,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: var(--Btn-font-size);
 }
 
 .Btn-square {
@@ -225,18 +229,14 @@ export default {
 
 .Btn-large {
     --Btn-size: var(--input-size-large);
+    --Btn-font-size: var(--font-size-large);
     --Btn-padding: var(--sp2);
-    font-size: var(--font-size-large);
 }
 
 .Btn-small {
     --Btn-size: var(--input-size-small);
+    --Btn-font-size: var(--font-size-small);
     --Btn-padding: var(--sp);
-    font-size: var(--font-size-small);
-}
-
-.Btn-small .Icon {
-    font-size: var(--font-size-small);
 }
 
 .Btn-iconPos-right .Icon {

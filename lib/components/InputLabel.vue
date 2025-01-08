@@ -35,16 +35,21 @@ export default {
 
 <style scoped>
 .InputLabel {
+    --InputLabel-size: calc(0.75 * var(--InputBase-size));
     position: relative;
     z-index: 10;
 
     display: flex;
     margin: 0 var(--sp2);
     max-width: 75%;
+
+    height: var(--InputLabel-size);
+    line-height: var(--InputLabel-size);
+    font-size: var(--InputBase-font-size);
 }
 
 .Corner {
-    flex: 0 0 24px;
+    flex: 0 0 var(--InputBase-size);
     stroke: transparent;
     fill: var(--InputBase-label-surface);
 }
