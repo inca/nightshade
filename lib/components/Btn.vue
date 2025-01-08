@@ -120,6 +120,7 @@ export default {
     --Btn-surface-top: transparent;
     --Btn-surface-bottom: transparent;
     --Btn-shadow-color: transparent;
+    --Btn-border-radius: var(--border-radius);
 
     -webkit-appearance: none;
     appearance: none;
@@ -139,7 +140,7 @@ export default {
     gap: var(--sp);
 
     border: 0;
-    border-radius: var(--border-radius-small);
+    border-radius: var(--Btn-border-radius);
     cursor: pointer;
     font: inherit;
     user-select: none;
@@ -201,7 +202,7 @@ export default {
 }
 
 .Btn-round {
-    border-radius: var(--border-radius-large);
+    --Btn-border-radius: var(--border-radius-round);
 }
 
 .Btn-disabled {

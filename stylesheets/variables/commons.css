@@ -10,9 +10,8 @@
     --color-subtle: var(--color-text-1);
     --color-sublime: var(--color-text-2);
 
-    --border-radius: var(--sp2);
-    --border-radius-small: var(--sp);
-    --border-radius-large: var(--sp4);
+    --border-radius: var(--sp);
+    --border-radius-round: var(--sp4);
 
     --input-size: var(--sp4);
     --input-size-small: var(--sp3);
