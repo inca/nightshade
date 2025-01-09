@@ -3,7 +3,7 @@
         <h2>Usage</h2>
         <p>
             Nightshade is shipped for ESM environments and build systems like <a href="https://vite.dev" target="_blank">Vite</a>.
-            The package consists of a tree-shakable ESM components build and a set of CSS files.
+            The package consists of a tree-shakable ESM components bundle and a set of CSS files.
         </p>
 
         <h3>Install the package</h3>
@@ -17,7 +17,7 @@
         <pre><code>{{ importIndividual }}</code></pre>
 
         <p>
-            Or import all components for simpler setup.
+            Or import all components for a simpler setup.
         </p>
         <pre><code>{{ importAll }}</code></pre>
 
@@ -35,7 +35,7 @@
                 <a href="https://github.com/inca/nightshade/blob/main/stylesheets/baseline.css" target="_blank">baseline.css</a> establishes the sensible baseline for component styles. Most notably, it sets the text color and styles on document root and includes a global <code>box-sizing: border-box</code> rule. It is strongly recommended to import it; however, if you find it causes conflicts with your existing application, you may customize it to your needs.
             </li>
             <li>
-                <code>components.css</code> contains the scoped styles for bundled components.
+                <code>components.css</code> contains the scoped styles for bundled components. Importing it is required.
             </li>
         </ul>
 

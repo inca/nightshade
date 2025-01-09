@@ -53,6 +53,7 @@ export default {
     --Tab-color: var(--color-text-0);
 
     display: flex;
+    cursor: pointer;
 }
 
 .Content {

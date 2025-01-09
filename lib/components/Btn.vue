@@ -246,6 +246,7 @@ export default {
 }
 
 /* Kinds */
+
 .Btn-default {
     --Btn-text-color: var(--color-default-text);
     --Btn-surface-top: var(--color-default-surface-top);

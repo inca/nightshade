@@ -107,6 +107,8 @@ export default {
 }
 
 .Label.Label {
+    position: relative;
+    z-index: 2;
     margin: 0 var(--sp2);
     max-width: calc(100% - 2 * var(--sp2));
 

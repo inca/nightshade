@@ -35,8 +35,8 @@ path {
 .TabCap-bottom.TabCap-start path { transform: scale(1, -1) }
 .TabCap-bottom.TabCap-end path { transform: scale(-1, -1) }
 
-.TabCap-left.TabCap-start path { transform: scale(1, 1) rotate(90deg) }
-.TabCap-left.TabCap-end path { transform: scale(-1, 1) rotate(-90deg) }
-.TabCap-right.TabCap-start path { transform: scale(1, -1) rotate(-90deg) }
-.TabCap-right.TabCap-end path { transform: scale(-1, -1) rotate(90deg) }
+.TabCap-right.TabCap-start path { transform: scale(1, 1) rotate(90deg) }
+.TabCap-right.TabCap-end path { transform: scale(-1, 1) rotate(-90deg) }
+.TabCap-left.TabCap-start path { transform: scale(1, -1) rotate(-90deg) }
+.TabCap-left.TabCap-end path { transform: scale(-1, -1) rotate(90deg) }
 </style>

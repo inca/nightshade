@@ -1,5 +1,6 @@
 <template>
-    <div
+    <component
+        :is="tagName"
         class="VGroup"
         :class="[
             `VGroup-align-${align}`,
@@ -7,13 +8,14 @@
             `VGroup-gap-${gap}`,
         ]">
         <slot />
-    </div>
+    </component>
 </template>
 
 <script>
 export default {
 
     props: {
+        tagName: { type: String, default: 'div' },
         align: { type: String, default: 'stretch' },
         justify: { type: String },
         gap: { type: String, default: '1' },

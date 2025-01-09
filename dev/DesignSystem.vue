@@ -32,7 +32,7 @@
         <pre><code>{{ typographyCss }}</code></pre>
 
         <p>
-            It is also advidable to introduce alternative font families (e.g. for headings).
+            It is also advisable to introduce at least one alternative font family (e.g. for headings).
         </p>
 
         <h3 id="colors">Colors</h3>
