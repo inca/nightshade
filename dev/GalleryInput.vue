@@ -4,7 +4,7 @@
 
         <VGroup gap="2">
 
-            <HGroup>
+            <HGroup wrap>
                 <HGroup tagName="label">
                     <input v-model="disabled" type="checkbox" />
                     <div>Disabled</div>
@@ -45,7 +45,7 @@
 
             <InputText
                 v-model="text"
-                label="Optional label"
+                label="Optional very very very very very very very very very very long label"
                 :pseudoFocus="focus"
                 :pseudoHover="hover"
                 :round="round"

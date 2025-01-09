@@ -3,9 +3,10 @@ import Circle from './components/Circle.vue';
 import HGroup from './components/HGroup.vue';
 import HStack from './components/HStack.vue';
 import InputBase from './components/InputBase.vue';
-import InputLabel from './components/InputLabel.vue';
 import InputText from './components/InputText.vue';
 import Sizer from './components/Sizer.vue';
+import Tab from './components/Tab.vue';
+import TabCap from './components/TabCap.vue';
 import VGroup from './components/VGroup.vue';
 
 export {
@@ -14,9 +15,10 @@ export {
     HGroup,
     HStack,
     InputBase,
-    InputLabel,
     InputText,
     Sizer,
+    Tab,
+    TabCap,
     VGroup,
 };
 
@@ -26,8 +28,9 @@ export const components = {
     HGroup,
     HStack,
     InputBase,
-    InputLabel,
     InputText,
     Sizer,
+    Tab,
+    TabCap,
     VGroup,
 };

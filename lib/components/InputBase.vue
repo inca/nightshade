@@ -13,8 +13,9 @@
                 'InputBase-pseudo-hover': pseudoHover,
             }
         ]">
-        <InputLabel
+        <Tab
             v-if="label"
+            class="Label"
             :label="label" />
         <div class="Container">
             <slot />
@@ -23,12 +24,12 @@
 </template>
 
 <script>
-import InputLabel from './InputLabel.vue';
+import Tab from './Tab.vue';
 
 export default {
 
     components: {
-        InputLabel,
+        Tab,
     },
 
     props: {
@@ -65,7 +66,7 @@ export default {
 
     --InputBase-label-color: var(--color-text-0);
     --InputBase-label-color-focus: var(--color-text-0);
-    --InputBase-label-color-invalid: var(--color-text-0);
+    --InputBase-label-color-invalid: var(--color-danger-4);
 
     --InputBase-label-surface: var(--color-base-1);
     --InputBase-label-surface-focus: var(--InputBase-outline-color-focus);
@@ -103,6 +104,18 @@ export default {
 
 .InputBase-fixed-height .Container {
     height: var(--InputBase-size);
+}
+
+.Label.Label {
+    margin: 0 var(--sp2);
+    max-width: calc(100% - 2 * var(--sp2));
+
+    --Tab-surface: var(--InputBase-label-surface);
+    --Tab-color: var(--InputBase-label-color);
+    --Tab-size: calc(.75 * var(--InputBase-size));
+    --Tab-cap-size: calc(.75 * var(--InputBase-size));
+
+    font-size: var(--InputBase-font-size);
 }
 
 .InputBase:not(.InputBase-disabled):focus-within, .InputBase.InputBase-pseudo-focus {

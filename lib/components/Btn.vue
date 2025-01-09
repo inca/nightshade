@@ -111,6 +111,7 @@ export default {
 <style scoped>
 .Btn {
     --Btn-padding: var(--sp1-5);
+    --Btn-gap: var(--sp);
     --Btn-size: var(--input-size);
     --Btn-font-size: var(--font-size);
 
@@ -138,7 +139,7 @@ export default {
     align-items: center;
     justify-content: flex-start;
     flex-shrink: 0;
-    gap: var(--sp);
+    gap: var(--Btn-gap);
 
     border: 0;
     border-radius: var(--Btn-border-radius);
@@ -237,6 +238,7 @@ export default {
     --Btn-size: var(--input-size-small);
     --Btn-font-size: var(--font-size-small);
     --Btn-padding: var(--sp);
+    --Btn-gap: var(--sp0-5);
 }
 
 .Btn-iconPos-right .Icon {
