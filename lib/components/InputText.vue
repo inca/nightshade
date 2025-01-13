@@ -83,5 +83,6 @@ input, textarea {
     background: transparent;
     color: inherit;
     font: inherit;
+    cursor: inherit;
 }
 </style>

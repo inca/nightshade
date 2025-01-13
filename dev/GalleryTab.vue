@@ -167,6 +167,8 @@ export default {
 
 <style scoped>
 .StandaloneTab {
+    position: relative;
+    z-index: -1;
     align-self: center;
 }
 
@@ -191,8 +193,6 @@ export default {
 
 .PanelTab {
     position: relative;
-    z-index: 1;
-    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, .25));
 }
 
 .PanelTab + .PanelTab {
@@ -200,8 +200,8 @@ export default {
 }
 
 .PanelTab-active {
-    --Tab-surface: var(--color-tertiary);
-    --Tab-color: var(--color-tertiary-text);
+    --Tab-surface: var(--color-tertiary-0);
+    --Tab-color: var(--color-tertiary-4);
     z-index: 20;
 }
 

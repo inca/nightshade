@@ -1,5 +1,6 @@
 <template>
-    <div
+    <component
+        :is="tagName"
         class="InputBase"
         :class="[
             `InputBase-${size}`,
@@ -20,7 +21,7 @@
         <div class="Container">
             <slot />
         </div>
-    </div>
+    </component>
 </template>
 
 <script>
@@ -33,6 +34,7 @@ export default {
     },
 
     props: {
+        tagName: { default: 'label' },
         label: { type: String },
         size: { type: String, default: 'normal' },
         fixedHeight: { type: Boolean, default: true },
@@ -65,7 +67,7 @@ export default {
     --InputBase-border-color-invalid: var(--color-danger);
 
     --InputBase-label-color: var(--color-text-0);
-    --InputBase-label-color-focus: var(--color-text-0);
+    --InputBase-label-color-focus: var(--color-tertiary-4);
     --InputBase-label-color-invalid: var(--color-danger-4);
 
     --InputBase-label-surface: var(--color-base-1);
@@ -107,8 +109,9 @@ export default {
 }
 
 .Label.Label {
+    align-self: flex-start;
     position: relative;
-    z-index: 2;
+    z-index: 0;
     margin: 0 var(--sp2);
     max-width: calc(100% - 2 * var(--sp2));
 

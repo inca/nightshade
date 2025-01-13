@@ -4,8 +4,10 @@
     "description": "Vue UI library & design system",
     "type": "module",
     "exports": {
-        ".": "./dist/nightshade.js",
-        "./stylesheets/components.css": "./dist/nightshade.css",
+        ".": "./dist/bundle.js",
+        "./components": "./dist/components.js",
+        "./components.css": "./dist/components.css",
+        "./utils": "./dist/utils.js",
         "./stylesheets/*": "./stylesheets/*"
     },
     "files": [

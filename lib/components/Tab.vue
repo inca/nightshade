@@ -13,7 +13,7 @@
             <slot>
                 <div
                     v-if="label"
-                    class="Label"
+                    class="TabLabel"
                     :title="label">
                     {{ label }}
                 </div>
@@ -51,9 +51,20 @@ export default {
     --Tab-cap-size: var(--sp4);
     --Tab-surface: var(--color-base-1);
     --Tab-color: var(--color-text-0);
+    --Tab-shadow-size: 1px;
+    --Tab-shadow-color: rgba(0, 0, 0, .25);
+    --Tab-shadow-offset-x: 0;
+    --Tab-shadow-offset-y: 0;
 
     display: flex;
     cursor: pointer;
+    position: relative;
+    filter: drop-shadow(var(--Tab-shadow-offset-x) var(--Tab-shadow-offset-y) var(--Tab-shadow-size) var(--Tab-shadow-color));
+}
+
+.TabCap, .Content {
+    position: relative;
+    z-index: 2;
 }
 
 .Content {
@@ -64,7 +75,7 @@ export default {
     color: var(--Tab-color);
 }
 
-.Label {
+.TabLabel {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
