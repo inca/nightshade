@@ -169,7 +169,7 @@ export default {
 }
 
 .Btn:not(:disabled):hover, .Btn.Btn-pseudo-hover {
-    filter: brightness(1.07);
+    filter: brightness(.96);
 }
 
 .Btn:not(:disabled):focus, .Btn.Btn-pseudo-focus {

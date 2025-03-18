@@ -186,6 +186,6 @@ export default {
 }
 
 .Overlay-shown {
-    background: rgba(0,0,0,.1);
+    background: var(--color-overlay);
 }
 </style>

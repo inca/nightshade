@@ -33,7 +33,7 @@ export default {
     --Bubble-surface: var(--color-base-0);
     --Bubble-arrow-size: 10px;
     --Bubble-arrow-offset: 16px;
-    --Bubble-shadow-color: var(--color-base-3);
+    --Bubble-shadow-color: var(--color-shadow-light);
     --Bubble-shadow-size: 0 2px 5px;
 }
 </style>
