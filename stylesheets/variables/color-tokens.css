@@ -91,10 +91,10 @@
     --color-warning-shadow: var(--color-warning-4);
 
     --color-danger: var(--color-danger-2);
-    --color-danger-0: hsl(350deg, 88%, 88%);
-    --color-danger-1: hsl(350deg, 88%, 68%);
-    --color-danger-2: hsl(350deg, 88%, 60%);
-    --color-danger-3: hsl(350deg, 88%, 52%);
+    --color-danger-0: hsl(350deg, 82%, 88%);
+    --color-danger-1: hsl(350deg, 82%, 68%);
+    --color-danger-2: hsl(350deg, 82%, 60%);
+    --color-danger-3: hsl(350deg, 82%, 52%);
     --color-danger-4: hsl(350deg, 60%, 32%);
     --color-danger-text: #fff;
     --color-danger-surface-top: var(--color-danger-1);

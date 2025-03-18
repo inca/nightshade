@@ -159,7 +159,7 @@ export default {
         var(--Btn-surface-bottom)
     );
     background-clip: padding-box;
-    box-shadow: 0 1px 1px var(--Btn-shadow-color);
+    box-shadow: 0 .5px .5px var(--Btn-shadow-color);
 
     transition: color .3s, outline .3s, filter .3s, border-radius .3s;
 }

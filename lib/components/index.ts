@@ -1,5 +1,7 @@
 import Btn from './Btn.vue';
+import Bubble from './Bubble.vue';
 import Circle from './Circle.vue';
+import ContextPopup from './ContextPopup.vue';
 import HGroup from './HGroup.vue';
 import HStack from './HStack.vue';
 import InputBase from './InputBase.vue';
@@ -11,7 +13,9 @@ import VGroup from './VGroup.vue';
 
 export {
     Btn,
+    Bubble,
     Circle,
+    ContextPopup,
     HGroup,
     HStack,
     InputBase,

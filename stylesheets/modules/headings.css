@@ -1,10 +1,10 @@
 :root {
 
-    --h1-font-size: 32px;
+    --h1-font-size: 36px;
     --h1-font-weight: var(--font-weight-bold);
     --h1-color: var(--color-text-0);
 
-    --h2-font-size: 28px;
+    --h2-font-size: 32px;
     --h2-font-weight: var(--font-weight);
     --h2-color: var(--color-text-0);
 
@@ -13,7 +13,7 @@
     --h3-color: var(--color-text-0);
 
     --h4-font-size: 20px;
-    --h4-font-weight: var(--font-weight-bold);
+    --h4-font-weight: var(--font-weight);
     --h4-color: var(--color-text-0);
 
     --h5-font-size: 16px;

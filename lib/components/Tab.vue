@@ -51,7 +51,7 @@ export default {
     --Tab-cap-size: var(--sp4);
     --Tab-surface: var(--color-base-1);
     --Tab-color: var(--color-text-0);
-    --Tab-shadow-size: 1px;
+    --Tab-shadow-size: 0.5px;
     --Tab-shadow-color: rgba(0, 0, 0, .25);
     --Tab-shadow-offset-x: 0;
     --Tab-shadow-offset-y: 0;
