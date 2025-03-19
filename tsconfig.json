@@ -6,10 +6,12 @@
         "**/*.vue"
     ],
     "compilerOptions": {
-        "noEmit": true,
         "lib": [
             "DOM",
             "ES2022"
-        ]
+        ],
+        "noEmit": true,
+        // "emitDeclarationOnly": true,
+        // "outDir": "./dist"
     }
 }

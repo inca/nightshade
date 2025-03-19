@@ -5,10 +5,10 @@
     "type": "module",
     "exports": {
         ".": "./dist/bundle.js",
-        "./components": "./dist/components.js",
         "./components.css": "./dist/components.css",
-        "./utils": "./dist/utils.js",
-        "./stylesheets/*": "./stylesheets/*"
+        "./stylesheets.css": "./stylesheets/full.css",
+        "./stylesheets/*": "./stylesheets/*",
+        "./utils": "./dist/utils.js"
     },
     "files": [
         "dist",
@@ -32,6 +32,6 @@
         "@vitejs/plugin-vue": "^5.2.1",
         "eslint": "^9.17.0",
         "typescript": "^5.7.2",
-        "vite": "^6.0.7"
+        "vite": "^6.2.2"
     }
 }

@@ -87,7 +87,7 @@ for (const [name, component] of Object.entries(components)) {
             return `
 import 'nightshade/stylesheets/variables.css';
 import 'nightshade/stylesheets/baseline.css';
-import 'nightshade/stylesheets/components.css';
+import 'nightshade/components.css';
 `.trim();
         },
 
@@ -103,8 +103,8 @@ import 'nightshade/stylesheets/modules/utils.css';
 
         importFullCss() {
             return `
-import 'nightshade/stylesheets/full.css';
-import 'nightshade/stylesheets/components.css';
+import 'nightshade/stylesheets.css';
+import 'nightshade/components.css';
 `.trim();
         }
 
