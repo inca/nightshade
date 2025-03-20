@@ -10,7 +10,7 @@
         "./stylesheets/*": "./stylesheets/*",
         "./utils": "./dist/utils.js"
     },
-    "types": "./dist/types/index.d.ts",
+    "types": "./dist/lib/index.d.ts",
     "files": [
         "dist",
         "stylesheets"
