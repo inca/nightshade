@@ -4,13 +4,18 @@
     "description": "Vue UI library & design system",
     "type": "module",
     "exports": {
-        ".": "./dist/bundle.js",
+        ".": {
+            "types": "./dist/lib/index.d.ts",
+            "import": "./dist/bundle.js"
+        },
+        "./utils": {
+            "types": "./dist/lib/utils/index.d.ts",
+            "import": "./dist/utils.js"
+        },
         "./components.css": "./dist/components.css",
         "./stylesheets.css": "./stylesheets/full.css",
-        "./stylesheets/*": "./stylesheets/*",
-        "./utils": "./dist/utils.js"
+        "./stylesheets/*": "./stylesheets/*"
     },
-    "types": "./dist/lib/index.d.ts",
     "files": [
         "dist",
         "stylesheets"
