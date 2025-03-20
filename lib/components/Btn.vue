@@ -116,12 +116,16 @@ export default {
     --Btn-font-size: var(--font-size);
 
     --Btn-text-color: inherit;
+
+    --Btn-outline-size: var(--input-outline-size);
     --Btn-outline-color: transparent;
     --Btn-outline-color-effective: transparent;
     --Btn-outline-color-focus: var(--color-primary);
+
     --Btn-surface-top: transparent;
     --Btn-surface-bottom: transparent;
     --Btn-shadow-color: transparent;
+
     --Btn-border-radius: var(--border-radius);
 
     -webkit-appearance: none;
@@ -151,7 +155,7 @@ export default {
     font-size: var(--Btn-font-size);
 
     color: var(--Btn-text-color);
-    outline: 2px solid var(--Btn-outline-color-effective);
+    outline: var(--Btn-outline-size) solid var(--Btn-outline-color-effective);
 
     background: radial-gradient(
         120% 150% at 80% 0%,

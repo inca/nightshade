@@ -10,6 +10,7 @@
         "./stylesheets/*": "./stylesheets/*",
         "./utils": "./dist/utils.js"
     },
+    "types": "./dist/types/index.d.ts",
     "files": [
         "dist",
         "stylesheets"
@@ -32,6 +33,7 @@
         "@vitejs/plugin-vue": "^5.2.1",
         "eslint": "^9.17.0",
         "typescript": "^5.7.2",
-        "vite": "^6.2.2"
+        "vite": "^6.2.2",
+        "vite-plugin-dts": "^4.5.3"
     }
 }

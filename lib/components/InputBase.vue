@@ -58,6 +58,7 @@ export default {
     --InputBase-text-color: var(--color-text-0);
     --InputBase-surface: var(--color-base-0);
 
+    --InputBase-outline-size: var(--input-outline-size);
     --InputBase-outline-color: transparent;
     --InputBase-outline-color-focus: var(--color-tertiary-focus);
     --InputBase-outline-color-invalid: var(--color-danger-focus);
@@ -74,6 +75,7 @@ export default {
     --InputBase-label-surface-focus: var(--InputBase-outline-color-focus);
     --InputBase-label-surface-invalid: var(--InputBase-outline-color-invalid);
 
+    --InputBase-border-size: var(--input-border-size);
     --InputBase-border-radius: var(--border-radius);
 
     position: relative;
@@ -96,8 +98,8 @@ export default {
 
     color: var(--InputBase-text-color);
     background: var(--InputBase-surface);
-    outline: 2px solid var(--InputBase-outline-color);
-    border: 1px solid var(--InputBase-border-color);
+    outline: var(--InputBase-outline-size) solid var(--InputBase-outline-color);
+    border: var(--InputBase-border-size) solid var(--InputBase-border-color);
     border-radius: var(--InputBase-border-radius);
     font-size: var(--InputBase-font-size);
 

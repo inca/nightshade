@@ -22,6 +22,9 @@
     --input-size-smaller: var(--sp2);
     --input-size-large: var(--sp5);
     --input-size-larger: var(--sp6);
+
+    --input-border-size: 1px;
+    --input-outline-size: 2px;
 }
 
 .theme-dark {
