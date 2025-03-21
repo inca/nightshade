@@ -25,7 +25,7 @@
         <i
             ref="icon"
             class="DropdownIcon"
-            :class="dropdownIcon" />
+            :class="iconDropdown" />
         <ContextMenu
             v-if="!disabled && menuShown"
             anchorRef="icon"
@@ -48,10 +48,6 @@ export default {
         items: { type: Array, default: () => [] },
         placeholder: { type: String },
         readonly: { type: Boolean },
-        dropdownIcon: {
-            type: String,
-            default: 'fas fa-angle-down',
-        },
         search: { type: Boolean, default: false },
     },
 
@@ -82,6 +78,10 @@ export default {
             const { selectedItem } = this;
             return selectedItem?.icon;
         },
+
+        iconDropdown() {
+            return this.icons?.dropdown ?? 'fas fa-angle-down';
+        }
 
     },
 
@@ -147,5 +147,6 @@ export default {
 
 .DropdownIcon {
     color: var(--color-text-2);
+    font-size: var(--font-size-small);
 }
 </style>

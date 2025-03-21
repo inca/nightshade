@@ -60,7 +60,8 @@
                             </div>
                             <i
                                 v-if="item.checked"
-                                class="fas fa-check fa-sm" />
+                                class="CheckIcon"
+                                :class="iconCheck" />
                         </div>
                         <div
                             v-if="item.description"
@@ -104,6 +105,14 @@ export default {
             searchQuery: '',
             filteredItems: this.items,
         };
+    },
+
+    computed: {
+
+        iconCheck() {
+            return this.icons?.check ?? 'fas fa-check';
+        }
+
     },
 
     unmounted() {
@@ -191,8 +200,8 @@ export default {
 .MenuItem {
     display: flex;
     flex-flow: column nowrap;
-    gap: var(--sphalf);
-    padding: var(--sp);
+    gap: var(--sp0-5);
+    padding: var(--sp0-5) var(--sp);
     cursor: pointer;
     user-select: none;
     outline: 0;
@@ -263,5 +272,9 @@ export default {
 .ItemDescription {
     font-size: var(--font-size-smaller);
     color: var(--color-text-2);
+}
+
+.CheckIcon {
+    font-size: var(--font-size-small);
 }
 </style>
