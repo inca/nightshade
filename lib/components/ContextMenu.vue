@@ -201,10 +201,11 @@ export default {
     display: flex;
     flex-flow: column nowrap;
     gap: var(--sp0-5);
-    padding: var(--sp0-5) var(--sp);
+    padding: var(--sp);
     cursor: pointer;
     user-select: none;
     outline: 0;
+    line-height: 1;
 }
 
 .MenuItem-primary {
