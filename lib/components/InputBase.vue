@@ -88,7 +88,7 @@ export default {
     --InputBase-border-color-focus: var(--color-tertiary);
     --InputBase-border-color-invalid: var(--color-danger);
 
-    --InputBase-label-color: var(--color-text-0);
+    --InputBase-label-color: var(--color-text-1);
     --InputBase-label-color-focus: var(--color-tertiary-4);
     --InputBase-label-color-invalid: var(--color-danger-4);
 
@@ -194,8 +194,10 @@ export default {
 }
 
 .Label.TextLabel {
-    padding: 0 var(--InputBase-padding);
+    margin: 0 var(--InputBase-padding);
     color: var(--InputBase-label-color);
+    line-height: 1.5;
+    height: var(--sp3);
 
     white-space: nowrap;
     overflow: hidden;
