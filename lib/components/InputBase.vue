@@ -13,11 +13,25 @@
                 'InputBase-pseudo-focus': pseudoFocus,
                 'InputBase-pseudo-hover': pseudoHover,
             }
-        ]">
-        <Tab
-            v-if="label"
-            class="Label"
-            :label="label" />
+        ]"
+        @focusin="focused = true"
+        @focusout="focused = false">
+        <template v-if="label">
+            <Tab
+                v-if="labelStyle === 'tab'"
+                class="Label TabLabel"
+                :label="label" />
+            <div
+                v-if="labelStyle === 'text'"
+                class="Label TextLabel">
+                {{ label }}
+            </div>
+            <div
+                v-if="labelStyle === 'inline'"
+                class="Label BorderLabel">
+                {{ label }}
+            </div>
+        </template>
         <div class="Container">
             <slot />
         </div>
@@ -36,6 +50,7 @@ export default {
     props: {
         tagName: { default: 'label' },
         label: { type: String },
+        labelStyle: { type: String, default: 'tab' },
         size: { type: String, default: 'normal' },
         fixedHeight: { type: Boolean, default: true },
         round: { type: Boolean, default: false },
@@ -44,7 +59,13 @@ export default {
         invalid: { type: Boolean, default: false },
         pseudoFocus: { type: Boolean, default: false },
         pseudoHover: { type: Boolean, default: false },
-    }
+    },
+
+    data() {
+        return {
+            focused: false,
+        };
+    },
 
 };
 </script>
@@ -78,6 +99,7 @@ export default {
     --InputBase-border-size: var(--input-border-size);
     --InputBase-border-radius: var(--border-radius);
 
+    outline: 0;
     position: relative;
     display: flex;
     flex-flow: column nowrap;
@@ -108,21 +130,6 @@ export default {
 
 .InputBase-fixed-height .Container {
     height: var(--InputBase-size);
-}
-
-.Label.Label {
-    align-self: flex-start;
-    position: relative;
-    z-index: 0;
-    margin: 0 var(--sp2);
-    max-width: calc(100% - 2 * var(--sp2));
-
-    --Tab-surface: var(--InputBase-label-surface);
-    --Tab-color: var(--InputBase-label-color);
-    --Tab-size: calc(.75 * var(--InputBase-size));
-    --Tab-cap-size: calc(.75 * var(--InputBase-size));
-
-    font-size: var(--InputBase-font-size);
 }
 
 .InputBase:not(.InputBase-disabled):focus-within, .InputBase.InputBase-pseudo-focus {
@@ -166,5 +173,52 @@ export default {
     --InputBase-size: var(--input-size-large);
     --InputBase-font-size: var(--font-size-large);
     --InputBase-padding: var(--sp2);
+}
+
+.Label {
+    max-width: calc(100% - 2 * var(--sp2));
+}
+
+.Label.TabLabel {
+    align-self: flex-start;
+    position: relative;
+    z-index: 0;
+    margin: 0 var(--sp2);
+
+    --Tab-surface: var(--InputBase-label-surface);
+    --Tab-color: var(--InputBase-label-color);
+    --Tab-size: calc(.75 * var(--InputBase-size));
+    --Tab-cap-size: calc(.75 * var(--InputBase-size));
+
+    font-size: var(--InputBase-font-size);
+}
+
+.Label.TextLabel {
+    padding: 0 var(--InputBase-padding);
+    color: var(--InputBase-label-color);
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.Label.BorderLabel {
+    --InputBase-label-color-focus: var(--InputBase-outline-color-focus);
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    left: -2px;
+    z-index: 2;
+    margin: 0 var(--InputBase-padding);
+    padding: 0 2px;
+    line-height: 1;
+
+    color: var(--InputBase-label-color);
+    font-size: var(--font-size-small);
+    background: var(--InputBase-surface);
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 </style>

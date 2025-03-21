@@ -109,6 +109,90 @@
                 </VGroup>
             </InputBase>
         </VGroup>
+
+        <p>
+            Inputs support the following label styles: <code>tab</code>, <code>text</code>, <code>inline</code>.
+        </p>
+
+        <VGroup gap="2">
+            <HGroup align="end">
+                <InputText
+                    v-model="text"
+                    label="Tab Label"
+                    labelStyle="tab"
+                    :disabled="disabled"
+                    :invalid="invalid"
+                    :size="size"
+                    :pseudoFocus="focus"
+                    :pseudoActive="active"
+                    :pseudoHover="hover"
+                    :round="round" />
+                <InputText
+                    v-model="text"
+                    label="Text Label"
+                    labelStyle="text"
+                    :disabled="disabled"
+                    :invalid="invalid"
+                    :size="size"
+                    :pseudoFocus="focus"
+                    :pseudoActive="active"
+                    :pseudoHover="hover"
+                    :round="round" />
+                <InputText
+                    v-model="text"
+                    label="Inline Label"
+                    labelStyle="inline"
+                    :disabled="disabled"
+                    :invalid="invalid"
+                    :size="size"
+                    :pseudoFocus="focus"
+                    :pseudoActive="active"
+                    :pseudoHover="hover"
+                    :round="round" />
+            </HGroup>
+        </VGroup>
+
+        <h3>Input Textarea</h3>
+
+        <InputTextarea
+            v-model="text"
+            label="Multiline text"
+            autoSize
+            minRows="4"
+            maxRows="8"
+            :disabled="disabled"
+            :invalid="invalid"
+            :size="size"
+            :pseudoFocus="focus"
+            :pseudoActive="active"
+            :pseudoHover="hover"
+            :round="round" />
+
+        <h3>Input Select</h3>
+
+        <InputSelect
+            v-model="selectedItem"
+            label="Choose your side"
+            :items="[
+                {
+                    icon: 'fas fa-robot',
+                    value: 'robot',
+                    title: 'Robot',
+                },
+                {
+                    icon: 'fas fa-user',
+                    value: 'human',
+                    title: 'Human',
+                }
+            ]"
+            :disabled="disabled"
+            :invalid="invalid"
+            :size="size"
+            :pseudoFocus="focus"
+            :pseudoActive="active"
+            :pseudoHover="hover"
+            :round="round" />
+
     </article>
 </template>
 
@@ -118,6 +202,7 @@ export default {
     data() {
         return {
             text: 'Hello world!',
+            selectedItem: 'robot',
             disabled: false,
             focus: false,
             hover: false,

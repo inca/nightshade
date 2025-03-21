@@ -7,8 +7,9 @@
     ],
     "compilerOptions": {
         "lib": [
+            "ES2022",
             "DOM",
-            "ES2022"
+            "DOM.Iterable"
         ],
         "noEmit": true,
         // "emitDeclarationOnly": true,

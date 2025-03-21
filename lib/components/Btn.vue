@@ -21,7 +21,6 @@
         :disabled="disabled || blocked"
         :title="title ?? label"
         :href="href"
-        @uiactivate="onUiActivate($event)"
         @mouseenter="hover = true"
         @mouseleave="hover = false">
 
@@ -94,14 +93,7 @@ export default {
 
     methods: {
 
-        onUiActivate() {
-            if (this.debounce > 0) {
-                this.blocked = true;
-                setTimeout(() => {
-                    this.blocked = false;
-                }, this.debounce);
-            }
-        },
+        // TODO add debounce
 
     }
 

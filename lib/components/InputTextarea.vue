@@ -30,7 +30,7 @@ export default {
 
     props: {
         ...InputBase.props,
-        modelValue: { type: [String, Number] },
+        modelValue: { type: String },
         placeholder: { type: String },
         rows: { type: Number },
         autoSize: { type: Boolean, default: true },

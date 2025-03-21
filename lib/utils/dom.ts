@@ -19,3 +19,10 @@ export function getAnchorPoint(el: HTMLElement, dir: AnchorDir): Point {
             return { x: left + width * .5, y: top + height * .5 };
     }
 }
+
+export function isInputElement(el: any) {
+    if (!(el instanceof Element)) {
+        return false;
+    }
+    return !!el.closest('input, textarea, select, [role="textbox"]');
+}

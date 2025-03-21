@@ -35,7 +35,13 @@ export default {
         overlayShown: { type: Boolean, default: true },
     },
 
-    emits: ['hide', 'mouseenter', 'mouseleave', 'ready'],
+    emits: [
+        'hide',
+        'mouseenter',
+        'mouseleave',
+        'ready',
+        'update:overlayShown',
+    ],
 
     data() {
         return {

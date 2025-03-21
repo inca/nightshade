@@ -15,6 +15,5 @@
         "noImplicitOverride": true,
         "allowJs": true,
         "checkJs": false,
-        "lib": ["ES2020"],
     }
 }
