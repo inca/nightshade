@@ -10,6 +10,7 @@ import InputSelect from './InputSelect.vue';
 import InputText from './InputText.vue';
 import InputTextarea from './InputTextarea.vue';
 import Sizer from './Sizer.vue';
+import Switch from './Switch.vue';
 import Tab from './Tab.vue';
 import TabCap from './TabCap.vue';
 import VGroup from './VGroup.vue';
@@ -27,6 +28,7 @@ export {
     InputText,
     InputTextarea,
     Sizer,
+    Switch,
     Tab,
     TabCap,
     VGroup,

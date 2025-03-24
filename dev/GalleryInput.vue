@@ -96,7 +96,8 @@
                 :disabled="disabled"
                 :invalid="invalid"
                 :size="size"
-                :fixedHeight="false">
+                :fixedHeight="false"
+                tagName="div">
                 <VGroup>
                     <p>Can also be multiline and contain other elements.</p>
                     <HGroup>
@@ -140,7 +141,7 @@
                     :round="round" />
                 <InputText
                     v-model="text"
-                    label="Inline Label"
+                    label="Inline Label gj"
                     labelStyle="inline"
                     :disabled="disabled"
                     :invalid="invalid"

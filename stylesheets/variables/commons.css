@@ -10,8 +10,9 @@
     --color-subtle: var(--color-text-1);
     --color-sublime: var(--color-text-2);
 
-    --color-shadow-light: rgba(0, 0, 0, 0.1);
-    --color-shadow-heavy: rgba(0, 0, 0, 0.2);
+    --color-shadow-light: rgba(0, 0, 0, 0.08);
+    --color-shadow-medium: rgba(0, 0, 0, 0.16);
+    --color-shadow-heavy: rgba(0, 0, 0, 0.24);
     --color-overlay: rgba(0, 0, 0, 0.1);
 
     --border-radius: var(--sp);
@@ -25,10 +26,12 @@
 
     --input-border-size: 1px;
     --input-outline-size: 2px;
+    --input-outline-offset: 0;
 }
 
 .theme-dark {
-    --color-shadow-light: rgba(255, 255, 255, 0.1);
-    --color-shadow-heavy: rgba(255, 255, 255, 0.2);
+    --color-shadow-light: rgba(255, 255, 255, 0.08);
+    --color-shadow-medium: rgba(255, 255, 255, 0.16);
+    --color-shadow-heavy: rgba(255, 255, 255, 0.24);
     --color-overlay: rgba(255, 255, 255, 0.08);
 }

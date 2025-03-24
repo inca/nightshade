@@ -28,7 +28,7 @@
             </div>
             <div
                 v-if="labelStyle === 'inline'"
-                class="Label BorderLabel">
+                class="Label InlineLabel">
                 {{ label }}
             </div>
         </template>
@@ -83,10 +83,13 @@ export default {
     --InputBase-outline-color: transparent;
     --InputBase-outline-color-focus: var(--color-tertiary-focus);
     --InputBase-outline-color-invalid: var(--color-danger-focus);
+    --InputBase-outline-offset: var(--input-outline-offset);
 
+    --InputBase-border-size: var(--input-border-size);
     --InputBase-border-color: var(--color-base-3);
     --InputBase-border-color-focus: var(--color-tertiary);
     --InputBase-border-color-invalid: var(--color-danger);
+    --InputBase-border-radius: var(--border-radius);
 
     --InputBase-label-color: var(--color-text-1);
     --InputBase-label-color-focus: var(--color-tertiary-4);
@@ -95,9 +98,6 @@ export default {
     --InputBase-label-surface: var(--color-base-1);
     --InputBase-label-surface-focus: var(--InputBase-outline-color-focus);
     --InputBase-label-surface-invalid: var(--InputBase-outline-color-invalid);
-
-    --InputBase-border-size: var(--input-border-size);
-    --InputBase-border-radius: var(--border-radius);
 
     outline: 0;
     position: relative;
@@ -109,7 +109,7 @@ export default {
     position: relative;
     z-index: 1;
 
-    display: inline-flex;
+    display: flex;
     align-items: center;
     border-radius: var(--border-radius-small);
     box-sizing: border-box;
@@ -120,9 +120,13 @@ export default {
 
     color: var(--InputBase-text-color);
     background: var(--InputBase-surface);
+
     outline: var(--InputBase-outline-size) solid var(--InputBase-outline-color);
+    outline-offset: var(--InputBase-outline-offset);
+
     border: var(--InputBase-border-size) solid var(--InputBase-border-color);
     border-radius: var(--InputBase-border-radius);
+
     font-size: var(--InputBase-font-size);
 
     transition: color .3s, outline .3s, border-radius .3s, filter .3s;
@@ -204,7 +208,7 @@ export default {
     text-overflow: ellipsis;
 }
 
-.Label.BorderLabel {
+.Label.InlineLabel {
     --InputBase-label-color-focus: var(--InputBase-outline-color-focus);
     position: absolute;
     top: 0;
@@ -213,14 +217,25 @@ export default {
     z-index: 2;
     margin: 0 var(--InputBase-padding);
     padding: 0 2px;
-    line-height: 1;
 
     color: var(--InputBase-label-color);
     font-size: var(--font-size-small);
-    background: var(--InputBase-surface);
 
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.Label.InlineLabel::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: var(--sp);
+    transform: translateY(-50%);
+    z-index: -1;
+
+    background: var(--InputBase-surface);
 }
 </style>

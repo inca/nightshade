@@ -113,6 +113,7 @@ export default {
     --Btn-outline-color: transparent;
     --Btn-outline-color-effective: transparent;
     --Btn-outline-color-focus: var(--color-primary);
+    --Btn-outline-offset: var(--input-outline-offset);
 
     --Btn-surface-top: transparent;
     --Btn-surface-bottom: transparent;
@@ -148,14 +149,13 @@ export default {
 
     color: var(--Btn-text-color);
     outline: var(--Btn-outline-size) solid var(--Btn-outline-color-effective);
-
+    outline-offset: var(--Btn-outline-offset);
     background: radial-gradient(
         120% 150% at 80% 0%,
         var(--Btn-surface-top),
         var(--Btn-surface-bottom)
     );
     background-clip: padding-box;
-    box-shadow: 0 .5px .5px var(--Btn-shadow-color);
 
     transition: color .3s, outline .3s, filter .3s, border-radius .3s;
 }
@@ -258,8 +258,6 @@ export default {
     --Btn-text-color: var(--color-primary-text);
     --Btn-surface-top: var(--color-primary-surface-top);
     --Btn-surface-bottom: var(--color-primary-surface-bottom);
-    --Btn-surface-top-hover: var(--color-primary-surface-top-hover);
-    --Btn-surface-bottom-hover: var(--color-primary-surface-bottom-hover);
     --Btn-outline-color: var(--color-primary-outline);
     --Btn-outline-color-focus: var(--color-primary-focus);
     --Btn-shadow-color: var(--color-primary-shadow);
@@ -269,8 +267,6 @@ export default {
     --Btn-text-color: var(--color-secondary-text);
     --Btn-surface-top: var(--color-secondary-surface-top);
     --Btn-surface-bottom: var(--color-secondary-surface-bottom);
-    --Btn-surface-top-hover: var(--color-secondary-surface-top-hover);
-    --Btn-surface-bottom-hover: var(--color-secondary-surface-bottom-hover);
     --Btn-outline-color: var(--color-secondary-outline);
     --Btn-outline-color-focus: var(--color-secondary-focus);
     --Btn-shadow-color: var(--color-secondary-shadow);
@@ -280,8 +276,6 @@ export default {
     --Btn-text-color: var(--color-tertiary-text);
     --Btn-surface-top: var(--color-tertiary-surface-top);
     --Btn-surface-bottom: var(--color-tertiary-surface-bottom);
-    --Btn-surface-top-hover: var(--color-tertiary-surface-top-hover);
-    --Btn-surface-bottom-hover: var(--color-tertiary-surface-bottom-hover);
     --Btn-outline-color: var(--color-tertiary-outline);
     --Btn-outline-color-focus: var(--color-tertiary-focus);
     --Btn-shadow-color: var(--color-tertiary-shadow);
@@ -291,8 +285,6 @@ export default {
     --Btn-text-color: var(--color-success-text);
     --Btn-surface-top: var(--color-success-surface-top);
     --Btn-surface-bottom: var(--color-success-surface-bottom);
-    --Btn-surface-top-hover: var(--color-success-surface-top-hover);
-    --Btn-surface-bottom-hover: var(--color-success-surface-bottom-hover);
     --Btn-outline-color: var(--color-success-outline);
     --Btn-outline-color-focus: var(--color-success-focus);
     --Btn-shadow-color: var(--color-success-shadow);
