@@ -13,7 +13,7 @@
             :placeholder="placeholder"
             :readonly="readonly"
             :disabled="disabled"
-            :rows="effectiveRows"
+            :rows="rows"
             resize="none"
             autocomplete="off"
             @input="onInput($event)"
