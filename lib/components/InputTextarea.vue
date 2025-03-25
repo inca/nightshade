@@ -45,13 +45,29 @@ export default {
         'update:modelValue'
     ],
 
+    watch: {
+
+        modelValue: {
+            handler() {
+                const textarea = this.$refs.input;
+                if (this.autoSize && textarea) {
+                    textarea.style.height = 'auto';
+                    textarea.style.height = textarea.scrollHeight + 'px';
+                }
+            },
+        },
+
+    },
+
     mounted() {
         this.$nextTick(() => {
+            const textarea = this.$refs.input;
             if (this.autoFocus) {
-                this.$refs.input?.focus();
+                textarea.focus();
             }
             if (this.autoSize) {
-                this.initAutoSize();
+                textarea.style.height = textarea.scrollHeight + 'px';
+                textarea.style.overflowY = 'hidden';
             }
         });
     },
@@ -60,16 +76,6 @@ export default {
 
         onInput(ev) {
             this.$emit('update:modelValue', ev.target.value);
-        },
-
-        initAutoSize() {
-            const textarea = this.$refs.input;
-            textarea.style.height = textarea.scrollHeight + 'px';
-            textarea.style.overflowY = 'hidden';
-            textarea.addEventListener('input', () => {
-                textarea.style.height = 'auto';
-                textarea.style.height = textarea.scrollHeight + 'px';
-            });
         },
 
     }
@@ -97,5 +103,13 @@ input, textarea {
     font: inherit;
     cursor: inherit;
     resize: none;
+}
+
+.InputBase:deep(.Container) {
+    overflow-y: auto;
+}
+
+textarea {
+    align-self: flex-start;
 }
 </style>
