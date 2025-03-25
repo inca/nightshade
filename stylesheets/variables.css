@@ -1,4 +1,5 @@
-@import './variables/spacing.css';
-@import './variables/typography.css';
 @import './variables/color-tokens.css';
 @import './variables/commons.css';
+@import './variables/spacing.css';
+@import './variables/type-tokens.css';
+@import './variables/typography.css';

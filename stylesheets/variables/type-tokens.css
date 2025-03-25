@@ -1,0 +1,18 @@
+:root {
+    --color-type-any: var(--color-base-3);
+    --color-type-any-alt: var(--color-text-3);
+    --color-type-null: var(--color-base-3);
+    --color-type-null-alt: var(--color-text-3);
+    --color-type-number: hsl(48deg, 80%, 60%);
+    --color-type-number-alt: hsl(48deg, 100%, 40%);
+    --color-type-integer: hsl(48deg, 80%, 60%);
+    --color-type-integer-alt: hsl(48deg, 100%, 40%);
+    --color-type-string: hsl(132deg, 50%, 70%);
+    --color-type-string-alt: hsl(132deg, 40%, 50%);
+    --color-type-boolean: hsl(192deg, 60%, 70%);
+    --color-type-boolean-alt: hsl(192deg, 60%, 50%);
+    --color-type-object: hsl(264deg, 60%, 80%);
+    --color-type-object-alt: hsl(264deg, 40%, 65%);
+    --color-type-array: hsl(320deg, 60%, 70%);
+    --color-type-array-alt: hsl(320deg, 60%, 60%);
+}
