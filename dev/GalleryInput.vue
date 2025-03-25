@@ -159,8 +159,6 @@
             v-model="text"
             label="Multiline text"
             autoSize
-            minRows="4"
-            maxRows="8"
             :disabled="disabled"
             :invalid="invalid"
             :size="size"

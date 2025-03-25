@@ -34,8 +34,6 @@ export default {
         placeholder: { type: String },
         rows: { type: Number },
         autoSize: { type: Boolean, default: true },
-        minRows: { type: Number, default: 2 },
-        maxRows: { type: Number, default: 10 },
         autoFocus: { type: Boolean },
         readonly: { type: Boolean },
     },
@@ -47,29 +45,32 @@ export default {
         'update:modelValue'
     ],
 
-    computed: {
-
-        effectiveRows() {
-            if (this.autoSize) {
-                const lineCount = this.modelValue.split('\n').length;
-                return Math.max(Math.min(lineCount, this.maxRows), this.minRows);
-            }
-            return this.rows ?? this.minRows ?? 2;
-        },
-
-    },
-
     mounted() {
-        if (this.autoFocus) {
-            this.$refs.input?.focus();
-        }
+        this.$nextTick(() => {
+            if (this.autoFocus) {
+                this.$refs.input?.focus();
+            }
+            if (this.autoSize) {
+                this.initAutoSize();
+            }
+        });
     },
 
     methods: {
 
         onInput(ev) {
             this.$emit('update:modelValue', ev.target.value);
-        }
+        },
+
+        initAutoSize() {
+            const textarea = this.$refs.input;
+            textarea.style.height = textarea.scrollHeight + 'px';
+            textarea.style.overflowY = 'hidden';
+            textarea.addEventListener('input', () => {
+                textarea.style.height = 'auto';
+                textarea.style.height = textarea.scrollHeight + 'px';
+            });
+        },
 
     }
 
