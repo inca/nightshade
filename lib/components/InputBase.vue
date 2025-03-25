@@ -212,8 +212,8 @@ export default {
     --InputBase-label-color-focus: var(--InputBase-outline-color-focus);
     position: absolute;
     top: 0;
+    left: 0;
     transform: translateY(-50%);
-    left: -2px;
     z-index: 2;
     margin: 0 var(--InputBase-padding);
     padding: 0 2px;

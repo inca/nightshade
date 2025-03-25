@@ -2,7 +2,6 @@
     <InputBase
         class="InputTextarea"
         v-bind="{
-            ...$attrs,
             ...$props
         }"
         :fixedHeight="false">

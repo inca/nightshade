@@ -2,7 +2,6 @@
     <InputBase
         class="InputText"
         v-bind="{
-            ...$attrs,
             ...$props
         }">
         <slot name="before" />

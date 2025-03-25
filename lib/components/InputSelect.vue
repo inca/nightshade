@@ -2,7 +2,6 @@
     <InputBase
         class="InputSelect"
         v-bind="{
-            ...$attrs,
             ...$props
         }"
         tabindex="0"
