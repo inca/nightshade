@@ -12,6 +12,8 @@
                 'Btn-square': square,
                 'Btn-round': round,
                 'Btn-outline': outline,
+                'Btn-flat': flat,
+                'Btn-shadow': shadow,
                 'Btn-block': block,
                 'Btn-pseudo-focus': pseudoFocus,
                 'Btn-pseudo-hover': pseudoHover,
@@ -66,6 +68,8 @@ export default {
         block: { type: Boolean, default: false },
         round: { type: Boolean, default: false },
         outline: { type: Boolean, default: false },
+        flat: { type: Boolean, default: false },
+        shadow: { type: Boolean, default: false },
         pseudoFocus: { type: Boolean, default: false },
         pseudoHover: { type: Boolean, default: false },
         pseudoActive: { type: Boolean, default: false },
@@ -115,11 +119,16 @@ export default {
     --Btn-outline-color-focus: var(--color-primary);
     --Btn-outline-offset: var(--input-outline-offset);
 
+    --Btn-surface: transparent;
     --Btn-surface-top: transparent;
     --Btn-surface-bottom: transparent;
-    --Btn-shadow-color: transparent;
 
+    --Btn-border-size: var(--input-border-size);
+    --Btn-border-size-effective: 0;
+    --Btn-border-color: transparent;
     --Btn-border-radius: var(--border-radius);
+
+    --Btn-shadow-color: transparent;
 
     -webkit-appearance: none;
     appearance: none;
@@ -138,7 +147,7 @@ export default {
     flex-shrink: 0;
     gap: var(--Btn-gap);
 
-    border: 0;
+    border: var(--Btn-border-size-effective) solid var(--Btn-border-color);
     border-radius: var(--Btn-border-radius);
     cursor: pointer;
     user-select: none;
@@ -218,8 +227,17 @@ export default {
     justify-content: center;
 }
 
-.Btn-outline {
-    --Btn-outline-color-effective: var(--Btn-outline-color);
+.Btn-outline.Btn-outline {
+    --Btn-border-size-effective: var(--Btn-border-size);
+}
+
+.Btn-flat.Btn-flat {
+    --Btn-surface-top: var(--Btn-surface);
+    --Btn-surface-bottom: var(--Btn-surface);
+}
+
+.Btn-shadow {
+    box-shadow: 0 1px 1px var(--Btn-shadow-color);
 }
 
 /* Sizes */
@@ -245,10 +263,10 @@ export default {
 
 .Btn-default {
     --Btn-text-color: var(--color-default-text);
+    --Btn-surface: var(--color-default-surface);
     --Btn-surface-top: var(--color-default-surface-top);
     --Btn-surface-bottom: var(--color-default-surface-bottom);
-    --Btn-surface-top-hover: var(--color-default-surface-top-hover);
-    --Btn-surface-bottom-hover: var(--color-default-surface-bottom-hover);
+    --Btn-border-color: var(--color-default-border-color);
     --Btn-outline-color: var(--color-default-outline);
     --Btn-outline-color-focus: var(--color-default-focus);
     --Btn-shadow-color: var(--color-default-shadow);
@@ -256,8 +274,10 @@ export default {
 
 .Btn-primary {
     --Btn-text-color: var(--color-primary-text);
+    --Btn-surface: var(--color-primary-surface);
     --Btn-surface-top: var(--color-primary-surface-top);
     --Btn-surface-bottom: var(--color-primary-surface-bottom);
+    --Btn-border-color: var(--color-primary-border-color);
     --Btn-outline-color: var(--color-primary-outline);
     --Btn-outline-color-focus: var(--color-primary-focus);
     --Btn-shadow-color: var(--color-primary-shadow);
@@ -265,8 +285,10 @@ export default {
 
 .Btn-secondary {
     --Btn-text-color: var(--color-secondary-text);
+    --Btn-surface: var(--color-secondary-surface);
     --Btn-surface-top: var(--color-secondary-surface-top);
     --Btn-surface-bottom: var(--color-secondary-surface-bottom);
+    --Btn-border-color: var(--color-secondary-border-color);
     --Btn-outline-color: var(--color-secondary-outline);
     --Btn-outline-color-focus: var(--color-secondary-focus);
     --Btn-shadow-color: var(--color-secondary-shadow);
@@ -274,8 +296,10 @@ export default {
 
 .Btn-tertiary {
     --Btn-text-color: var(--color-tertiary-text);
+    --Btn-surface: var(--color-tertiary-surface);
     --Btn-surface-top: var(--color-tertiary-surface-top);
     --Btn-surface-bottom: var(--color-tertiary-surface-bottom);
+    --Btn-border-color: var(--color-tertiary-border-color);
     --Btn-outline-color: var(--color-tertiary-outline);
     --Btn-outline-color-focus: var(--color-tertiary-focus);
     --Btn-shadow-color: var(--color-tertiary-shadow);
@@ -283,8 +307,10 @@ export default {
 
 .Btn-success {
     --Btn-text-color: var(--color-success-text);
+    --Btn-surface: var(--color-success-surface);
     --Btn-surface-top: var(--color-success-surface-top);
     --Btn-surface-bottom: var(--color-success-surface-bottom);
+    --Btn-border-color: var(--color-success-border-color);
     --Btn-outline-color: var(--color-success-outline);
     --Btn-outline-color-focus: var(--color-success-focus);
     --Btn-shadow-color: var(--color-success-shadow);
@@ -292,8 +318,10 @@ export default {
 
 .Btn-warning {
     --Btn-text-color: var(--color-warning-text);
+    --Btn-surface: var(--color-warning-surface);
     --Btn-surface-top: var(--color-warning-surface-top);
     --Btn-surface-bottom: var(--color-warning-surface-bottom);
+    --Btn-border-color: var(--color-warning-border-color);
     --Btn-outline-color: var(--color-warning-outline);
     --Btn-outline-color-focus: var(--color-warning-focus);
     --Btn-shadow-color: var(--color-warning-shadow);
@@ -301,8 +329,10 @@ export default {
 
 .Btn-danger {
     --Btn-text-color: var(--color-danger-text);
+    --Btn-surface: var(--color-danger-surface);
     --Btn-surface-top: var(--color-danger-surface-top);
     --Btn-surface-bottom: var(--color-danger-surface-bottom);
+    --Btn-border-color: var(--color-danger-border-color);
     --Btn-outline-color: var(--color-danger-outline);
     --Btn-outline-color-focus: var(--color-danger-focus);
     --Btn-shadow-color: var(--color-danger-shadow);
@@ -310,42 +340,49 @@ export default {
 
 .Btn-link-default {
     --Btn-text-color: var(--color-default);
+    --Btn-border-color: var(--color-default-border-color);
     --Btn-outline-color: var(--color-default-outline);
     --Btn-outline-color-focus: var(--color-default-focus);
 }
 
 .Btn-link-primary {
     --Btn-text-color: var(--color-primary);
+    --Btn-border-color: var(--color-primary-border-color);
     --Btn-outline-color: var(--color-primary-outline);
     --Btn-outline-color-focus: var(--color-primary-focus);
 }
 
 .Btn-link-secondary {
     --Btn-text-color: var(--color-secondary);
+    --Btn-border-color: var(--color-secondary-border-color);
     --Btn-outline-color: var(--color-secondary-outline);
     --Btn-outline-color-focus: var(--color-secondary-focus);
 }
 
 .Btn-link-tertiary {
     --Btn-text-color: var(--color-tertiary);
+    --Btn-border-color: var(--color-tertiary-border-color);
     --Btn-outline-color: var(--color-tertiary-outline);
     --Btn-outline-color-focus: var(--color-tertiary-focus);
 }
 
 .Btn-link-success {
     --Btn-text-color: var(--color-success);
+    --Btn-border-color: var(--color-success-border-color);
     --Btn-outline-color: var(--color-success-outline);
     --Btn-outline-color-focus: var(--color-success-focus);
 }
 
 .Btn-link-warning {
     --Btn-text-color: var(--color-warning);
+    --Btn-border-color: var(--color-warning-border-color);
     --Btn-outline-color: var(--color-warning-outline);
     --Btn-outline-color-focus: var(--color-warning-focus);
 }
 
 .Btn-link-danger {
     --Btn-text-color: var(--color-danger);
+    --Btn-border-color: var(--color-danger-border-color);
     --Btn-outline-color: var(--color-danger-outline);
     --Btn-outline-color-focus: var(--color-danger-focus);
 }

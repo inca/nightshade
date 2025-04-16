@@ -5,110 +5,133 @@
     --color-base-2: hsl(280deg, 10%, 92%);
     --color-base-3: hsl(280deg, 10%, 88%);
     --color-base-4: hsl(280deg, 10%, 80%);
+    --color-base-5: hsl(280deg, 10%, 75%);
 
     --color-text-0: hsl(280deg, 10%, 20%);
     --color-text-1: hsl(280deg, 10%, 48%);
     --color-text-2: hsl(280deg, 10%, 64%);
     --color-text-3: hsl(280deg, 10%, 72%);
     --color-text-4: hsl(280deg, 10%, 78%);
+    --color-text-5: hsl(280deg, 10%, 75%);
 
     --color-default-0: var(--color-base-0);
     --color-default-1: var(--color-base-1);
     --color-default-2: var(--color-base-2);
     --color-default-3: var(--color-base-3);
     --color-default-4: var(--color-base-4);
+    --color-default-5: var(--color-base-5);
 
     --color-primary-0: hsl(310deg, 64%, 75%);
     --color-primary-1: hsl(310deg, 64%, 64%);
     --color-primary-2: hsl(310deg, 64%, 50%);
     --color-primary-3: hsl(310deg, 64%, 44%);
-    --color-primary-4: hsl(310deg, 64%, 24%);
+    --color-primary-4: hsl(310deg, 64%, 36%);
+    --color-primary-5: hsl(310deg, 64%, 24%);
     --color-primary-text: #fff;
 
     --color-secondary-0: hsl(290deg, 50%, 80%);
     --color-secondary-1: hsl(290deg, 50%, 68%);
     --color-secondary-2: hsl(290deg, 50%, 60%);
     --color-secondary-3: hsl(290deg, 50%, 48%);
-    --color-secondary-4: hsl(290deg, 50%, 24%);
+    --color-secondary-4: hsl(290deg, 50%, 40%);
+    --color-secondary-5: hsl(290deg, 50%, 24%);
     --color-secondary-text: #fff;
 
     --color-tertiary-0: hsl(176deg, 50%, 78%);
     --color-tertiary-1: hsl(176deg, 50%, 72%);
     --color-tertiary-2: hsl(176deg, 50%, 50%);
     --color-tertiary-3: hsl(176deg, 50%, 44%);
-    --color-tertiary-4: hsl(176deg, 28%, 24%);
+    --color-tertiary-4: hsl(176deg, 50%, 40%);
+    --color-tertiary-5: hsl(176deg, 50%, 24%);
     --color-tertiary-text: #fff;
 
     --color-success-0: hsl(96deg, 60%, 80%);
     --color-success-1: hsl(96deg, 60%, 72%);
-    --color-success-2: hsl(96deg, 60%, 56%);
-    --color-success-3: hsl(96deg, 60%, 48%);
-    --color-success-4: hsl(96deg, 40%, 28%);
+    --color-success-2: hsl(96deg, 60%, 52%);
+    --color-success-3: hsl(96deg, 60%, 44%);
+    --color-success-4: hsl(96deg, 40%, 40%);
+    --color-success-5: hsl(96deg, 40%, 24%);
     --color-success-text: #fff;
 
     --color-warning-0: hsl(48deg, 88%, 85%);
     --color-warning-1: hsl(48deg, 88%, 80%);
     --color-warning-2: hsl(48deg, 88%, 60%);
     --color-warning-3: hsl(48deg, 88%, 48%);
-    --color-warning-4: hsl(48deg, 60%, 28%);
+    --color-warning-4: hsl(48deg, 60%, 40%);
+    --color-warning-5: hsl(48deg, 60%, 24%);
     --color-warning-text: #000;
 
     --color-danger-0: hsl(350deg, 82%, 88%);
     --color-danger-1: hsl(350deg, 82%, 68%);
     --color-danger-2: hsl(350deg, 82%, 60%);
     --color-danger-3: hsl(350deg, 82%, 52%);
-    --color-danger-4: hsl(350deg, 60%, 32%);
+    --color-danger-4: hsl(350deg, 60%, 44%);
+    --color-danger-5: hsl(350deg, 60%, 28%);
     --color-danger-text: #fff;
 
     --color-default: var(--color-text-0);
     --color-default-text: var(--color-text-0);
+    --color-default-border-color: var(--color-default-4);
+    --color-default-surface: var(--color-default-2);
     --color-default-surface-top: var(--color-default-1);
     --color-default-surface-bottom: var(--color-default-3);
     --color-default-focus: var(--color-primary-focus);
     --color-default-outline: var(--color-default-2);
-    --color-default-shadow: var(--color-default-4);
+    --color-default-shadow: var(--color-default-5);
 
     --color-primary: var(--color-primary-2);
+    --color-primary-border-color: var(--color-primary-4);
+    --color-primary-surface: var(--color-primary-2);
     --color-primary-surface-top: var(--color-primary-1);
     --color-primary-surface-bottom: var(--color-primary-3);
     --color-primary-focus: var(--color-primary-0);
     --color-primary-outline: var(--color-primary-2);
-    --color-primary-shadow: var(--color-primary-4);
+    --color-primary-shadow: var(--color-primary-5);
 
     --color-secondary: var(--color-secondary-2);
+    --color-secondary-border-color: var(--color-secondary-4);
+    --color-secondary-surface: var(--color-secondary-2);
     --color-secondary-surface-top: var(--color-secondary-1);
     --color-secondary-surface-bottom: var(--color-secondary-3);
     --color-secondary-focus: var(--color-secondary-0);
     --color-secondary-outline: var(--color-secondary-2);
-    --color-secondary-shadow: var(--color-secondary-4);
+    --color-secondary-shadow: var(--color-secondary-5);
 
     --color-tertiary: var(--color-tertiary-2);
+    --color-tertiary-border-color: var(--color-tertiary-4);
+    --color-tertiary-surface: var(--color-tertiary-2);
     --color-tertiary-surface-top: var(--color-tertiary-1);
     --color-tertiary-surface-bottom: var(--color-tertiary-3);
     --color-tertiary-focus: var(--color-tertiary-0);
     --color-tertiary-outline: var(--color-tertiary-2);
-    --color-tertiary-shadow: var(--color-tertiary-4);
+    --color-tertiary-shadow: var(--color-tertiary-5);
 
     --color-success: var(--color-success-2);
+    --color-success-border-color: var(--color-success-4);
+    --color-success-surface: var(--color-success-2);
     --color-success-surface-top: var(--color-success-1);
     --color-success-surface-bottom: var(--color-success-3);
     --color-success-focus: var(--color-success-0);
     --color-success-outline: var(--color-success-2);
-    --color-success-shadow: var(--color-success-4);
+    --color-success-shadow: var(--color-success-5);
 
     --color-warning: var(--color-warning-3);
+    --color-warning-border-color: var(--color-warning-4);
+    --color-warning-surface: var(--color-warning-3);
     --color-warning-surface-top: var(--color-warning-1);
     --color-warning-surface-bottom: var(--color-warning-3);
     --color-warning-focus: var(--color-warning-0);
     --color-warning-outline: var(--color-warning-2);
-    --color-warning-shadow: var(--color-warning-4);
+    --color-warning-shadow: var(--color-warning-5);
 
     --color-danger: var(--color-danger-2);
+    --color-danger-border-color: var(--color-danger-4);
+    --color-danger-surface: var(--color-danger-2);
     --color-danger-surface-top: var(--color-danger-1);
     --color-danger-surface-bottom: var(--color-danger-3);
     --color-danger-focus: var(--color-danger-0);
     --color-danger-outline: var(--color-danger-2);
-    --color-danger-shadow: var(--color-danger-4);
+    --color-danger-shadow: var(--color-danger-5);
 
 }
 

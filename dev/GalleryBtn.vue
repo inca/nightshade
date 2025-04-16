@@ -20,12 +20,20 @@
                     <div>Active</div>
                 </HGroup>
                 <HGroup tagName="label">
+                    <input v-model="flat" type="checkbox" />
+                    <div>Flat</div>
+                </HGroup>
+                <HGroup tagName="label">
                     <input v-model="round" type="checkbox" />
                     <div>Round</div>
                 </HGroup>
                 <HGroup tagName="label">
                     <input v-model="outline" type="checkbox" />
                     <div>Outline</div>
+                </HGroup>
+                <HGroup tagName="label">
+                    <input v-model="shadow" type="checkbox" />
+                    <div>Shadow</div>
                 </HGroup>
                 <HGroup tagName="label">
                     <input
@@ -56,6 +64,8 @@
                     :pseudoActive="active"
                     :round="round"
                     :outline="outline"
+                    :shadow="shadow"
+                    :flat="flat"
                     :size="size"
                     :icon="icon" />
             </HGroup>
@@ -71,6 +81,8 @@
                     :pseudoActive="active"
                     :round="round"
                     :outline="outline"
+                    :shadow="shadow"
+                    :flat="flat"
                     :size="size"
                     :icon="icon" />
             </HGroup>
@@ -89,6 +101,8 @@ export default {
             active: false,
             round: false,
             outline: false,
+            shadow: false,
+            flat: false,
             size: undefined,
             icon: undefined,
         };

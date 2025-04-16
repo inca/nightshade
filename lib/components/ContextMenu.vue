@@ -257,6 +257,7 @@ export default {
 
 .ItemTitle {
     flex: 1;
+    line-height: 1.5;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

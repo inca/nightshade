@@ -87,7 +87,7 @@ export default {
 <style scoped>
 .BubbleSpace {
     position: relative;
-    height: 480px;
+    height: 240px;
 }
 
 .Anchor {
