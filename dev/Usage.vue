@@ -94,7 +94,6 @@ import 'nightshade/components.css';
         importOptionalCss() {
             return `
 import 'nightshade/stylesheets/modules/article.css';
-import 'nightshade/stylesheets/modules/headings.css';
 import 'nightshade/stylesheets/modules/kbd.css';
 import 'nightshade/stylesheets/modules/transitions.css';
 import 'nightshade/stylesheets/modules/utils.css';

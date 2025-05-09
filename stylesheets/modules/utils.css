@@ -73,7 +73,9 @@
 }
 
 .text-small { font-size: var(--font-size-small) }
+.text-smaller { font-size: var(--font-size-smaller) }
 .text-large { font-size: var(--font-size-large) }
+.text-larger { font-size: var(--font-size-larger) }
 
 .nowrap {
     white-space: nowrap;
