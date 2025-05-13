@@ -34,7 +34,7 @@
                             `Anchor-${align}`,
                         ]">
                         <Bubble :dir="dir" :align="align">
-                            <div class="pad-2 nowrap">
+                            <div class="BubbleContent nowrap">
                                 dir: {{ dir }}, align: {{ align }}
                             </div>
                         </Bubble>
@@ -88,6 +88,10 @@ export default {
 .BubbleSpace {
     position: relative;
     height: 240px;
+}
+
+.BubbleContent {
+    padding: var(--sp2);
 }
 
 .Anchor {
