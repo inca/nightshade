@@ -202,6 +202,7 @@ export default {
         return {
             text: 'Hello world!',
             selectedItem: 'robot',
+            active: false,
             disabled: false,
             focus: false,
             hover: false,

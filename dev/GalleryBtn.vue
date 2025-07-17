@@ -129,6 +129,10 @@ export default {
                     label: 'Tertiary',
                 },
                 {
+                    id: 'mono',
+                    label: 'Mono',
+                },
+                {
                     id: 'success',
                     label: 'Success',
                 },

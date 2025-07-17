@@ -190,6 +190,13 @@ export default {
     --Switch-outline-color-focus: var(--color-tertiary-focus);
 }
 
+.Switch-mono {
+    --Switch-surface-top-active: var(--color-mono-surface-top);
+    --Switch-surface-bottom-active: var(--color-mono-surface-bottom);
+    --Switch-outline-color: var(--color-mono-outline);
+    --Switch-outline-color-focus: var(--color-mono-focus);
+}
+
 .Switch-success {
     --Switch-surface-top-active: var(--color-success-surface-top);
     --Switch-surface-bottom-active: var(--color-success-surface-bottom);

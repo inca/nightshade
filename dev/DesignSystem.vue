@@ -139,6 +139,16 @@
                 </HGroup>
             </li>
             <li>
+                <strong>mono</strong> uses inverted colors (text swaps with background) — a good alternative for main UI elements where the highest contrast is required and the extra chromatism are not desirable (e.g. so as to not draw the attention away from the content)
+                <HGroup>
+                    <Circle style="background: var(--color-mono-0)" />
+                    <Circle style="background: var(--color-mono-1)" />
+                    <Circle style="background: var(--color-mono-2)" />
+                    <Circle style="background: var(--color-mono-3)" />
+                    <Circle style="background: var(--color-mono-4)" />
+                </HGroup>
+            </li>
+            <li>
                 <strong>success</strong> indicates a successful action or outcome, synonymous to "great job". Should conventionally be a shade of green.
                 <HGroup>
                     <Circle style="background: var(--color-success-0)" />

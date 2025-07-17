@@ -55,6 +55,7 @@ export default {
     data() {
         return {
             value: false,
+            active: false,
             disabled: false,
             focus: false,
             hover: false,
@@ -78,6 +79,10 @@ export default {
                 {
                     id: 'tertiary',
                     label: 'Tertiary',
+                },
+                {
+                    id: 'mono',
+                    label: 'Mono',
                 },
                 {
                     id: 'success',

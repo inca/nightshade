@@ -27,7 +27,6 @@
     --color-primary-3: hsl(310deg, 64%, 44%);
     --color-primary-4: hsl(310deg, 64%, 36%);
     --color-primary-5: hsl(310deg, 64%, 24%);
-    --color-primary-text: #fff;
 
     --color-secondary-0: hsl(290deg, 50%, 80%);
     --color-secondary-1: hsl(290deg, 50%, 68%);
@@ -35,7 +34,6 @@
     --color-secondary-3: hsl(290deg, 50%, 48%);
     --color-secondary-4: hsl(290deg, 50%, 40%);
     --color-secondary-5: hsl(290deg, 50%, 24%);
-    --color-secondary-text: #fff;
 
     --color-tertiary-0: hsl(176deg, 50%, 78%);
     --color-tertiary-1: hsl(176deg, 50%, 72%);
@@ -43,7 +41,6 @@
     --color-tertiary-3: hsl(176deg, 50%, 44%);
     --color-tertiary-4: hsl(176deg, 50%, 40%);
     --color-tertiary-5: hsl(176deg, 50%, 24%);
-    --color-tertiary-text: #fff;
 
     --color-success-0: hsl(96deg, 60%, 80%);
     --color-success-1: hsl(96deg, 60%, 72%);
@@ -51,7 +48,6 @@
     --color-success-3: hsl(96deg, 60%, 44%);
     --color-success-4: hsl(96deg, 40%, 40%);
     --color-success-5: hsl(96deg, 40%, 24%);
-    --color-success-text: #fff;
 
     --color-warning-0: hsl(48deg, 88%, 85%);
     --color-warning-1: hsl(48deg, 88%, 80%);
@@ -59,7 +55,6 @@
     --color-warning-3: hsl(48deg, 88%, 48%);
     --color-warning-4: hsl(48deg, 60%, 40%);
     --color-warning-5: hsl(48deg, 60%, 24%);
-    --color-warning-text: #000;
 
     --color-danger-0: hsl(350deg, 82%, 88%);
     --color-danger-1: hsl(350deg, 82%, 68%);
@@ -67,7 +62,6 @@
     --color-danger-3: hsl(350deg, 82%, 52%);
     --color-danger-4: hsl(350deg, 60%, 44%);
     --color-danger-5: hsl(350deg, 60%, 28%);
-    --color-danger-text: #fff;
 
     --color-default: var(--color-text-0);
     --color-default-text: var(--color-text-0);
@@ -80,6 +74,7 @@
     --color-default-shadow: var(--color-default-5);
 
     --color-primary: var(--color-primary-2);
+    --color-primary-text: #fff;
     --color-primary-border-color: var(--color-primary-4);
     --color-primary-surface: var(--color-primary-2);
     --color-primary-surface-top: var(--color-primary-1);
@@ -89,6 +84,7 @@
     --color-primary-shadow: var(--color-primary-5);
 
     --color-secondary: var(--color-secondary-2);
+    --color-secondary-text: #fff;
     --color-secondary-border-color: var(--color-secondary-4);
     --color-secondary-surface: var(--color-secondary-2);
     --color-secondary-surface-top: var(--color-secondary-1);
@@ -98,6 +94,7 @@
     --color-secondary-shadow: var(--color-secondary-5);
 
     --color-tertiary: var(--color-tertiary-2);
+    --color-tertiary-text: #fff;
     --color-tertiary-border-color: var(--color-tertiary-4);
     --color-tertiary-surface: var(--color-tertiary-2);
     --color-tertiary-surface-top: var(--color-tertiary-1);
@@ -106,7 +103,18 @@
     --color-tertiary-outline: var(--color-tertiary-2);
     --color-tertiary-shadow: var(--color-tertiary-5);
 
+    --color-mono: var(--color-text-0);
+    --color-mono-text: var(--color-base-0);
+    --color-mono-border-color: var(--color-text-0);
+    --color-mono-surface: var(--color-text-0);
+    --color-mono-surface-top: var(--color-text-0);
+    --color-mono-surface-bottom: var(--color-text-0);
+    --color-mono-focus: var(--color-base-3);
+    --color-mono-outline: var(--color-base-3);
+    --color-mono-shadow: var(--color-base-3);
+
     --color-success: var(--color-success-2);
+    --color-success-text: #fff;
     --color-success-border-color: var(--color-success-4);
     --color-success-surface: var(--color-success-2);
     --color-success-surface-top: var(--color-success-1);
@@ -116,6 +124,7 @@
     --color-success-shadow: var(--color-success-5);
 
     --color-warning: var(--color-warning-3);
+    --color-warning-text: #000;
     --color-warning-border-color: var(--color-warning-4);
     --color-warning-surface: var(--color-warning-3);
     --color-warning-surface-top: var(--color-warning-1);
@@ -125,6 +134,7 @@
     --color-warning-shadow: var(--color-warning-5);
 
     --color-danger: var(--color-danger-2);
+    --color-danger-text: #fff;
     --color-danger-border-color: var(--color-danger-4);
     --color-danger-surface: var(--color-danger-2);
     --color-danger-surface-top: var(--color-danger-1);

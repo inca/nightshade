@@ -305,6 +305,17 @@ export default {
     --Btn-shadow-color: var(--color-tertiary-shadow);
 }
 
+.Btn-mono {
+    --Btn-text-color: var(--color-mono-text);
+    --Btn-surface: var(--color-mono-surface);
+    --Btn-surface-top: var(--color-mono-surface-top);
+    --Btn-surface-bottom: var(--color-mono-surface-bottom);
+    --Btn-border-color: var(--color-mono-border-color);
+    --Btn-outline-color: var(--color-mono-outline);
+    --Btn-outline-color-focus: var(--color-mono-focus);
+    --Btn-shadow-color: var(--color-mono-shadow);
+}
+
 .Btn-success {
     --Btn-text-color: var(--color-success-text);
     --Btn-surface: var(--color-success-surface);
@@ -364,6 +375,13 @@ export default {
     --Btn-border-color: var(--color-tertiary-border-color);
     --Btn-outline-color: var(--color-tertiary-outline);
     --Btn-outline-color-focus: var(--color-tertiary-focus);
+}
+
+.Btn-link-mono {
+    --Btn-text-color: var(--color-mono);
+    --Btn-border-color: var(--color-mono-border-color);
+    --Btn-outline-color: var(--color-mono-outline);
+    --Btn-outline-color-focus: var(--color-mono-focus);
 }
 
 .Btn-link-success {
