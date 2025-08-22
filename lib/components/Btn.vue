@@ -59,7 +59,7 @@ export default {
         iconPos: { type: String, default: 'left' },
         kind: { type: String, default: 'link-default' },
         hoverKind: { type: String },
-        customTag: { type: String },
+        tagName: { type: String, default: 'button' },
         href: { type: String },
         debounce: { type: Number, default: 0 },
         disabled: { type: Boolean, default: false },
@@ -83,10 +83,6 @@ export default {
     },
 
     computed: {
-
-        tagName() {
-            return this.customTag ?? 'button';
-        },
 
         actualKind() {
             const { kind, hoverKind, hover } = this;
