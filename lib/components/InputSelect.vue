@@ -21,10 +21,13 @@
             class="Placeholder">
             {{ placeholder }}
         </span>
-        <i
+        <div
             ref="icon"
-            class="DropdownIcon"
-            :class="iconDropdown" />
+            class="DropdownIcon">
+            <slot name="iconDropdown">
+                <i :class="iconDropdown" />
+            </slot>
+        </div>
         <ContextMenu
             v-if="!disabled && menuShown"
             anchorRef="icon"
@@ -79,8 +82,8 @@ export default {
         },
 
         iconDropdown() {
-            return this.icons?.dropdown ?? 'fas fa-angle-down';
-        }
+            return this.$nightshadeIcons?.dropdown ?? 'fas fa-angle-down';
+        },
 
     },
 

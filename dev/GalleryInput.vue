@@ -141,7 +141,7 @@
                     :round="round" />
                 <InputText
                     v-model="text"
-                    label="Inline Label gj"
+                    label="Inline Label"
                     labelStyle="inline"
                     :disabled="disabled"
                     :invalid="invalid"

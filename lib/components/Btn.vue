@@ -128,6 +128,11 @@ export default {
     --Btn-border-color: transparent;
     --Btn-border-radius: var(--border-radius);
 
+    --Btn-gradient-x: 50%;
+    --Btn-gradient-y: 0%;
+    --Btn-gradient-width: 150%;
+    --Btn-gradient-height: 150%;
+
     --Btn-shadow-color: transparent;
 
     -webkit-appearance: none;
@@ -160,7 +165,7 @@ export default {
     outline: var(--Btn-outline-size) solid var(--Btn-outline-color-effective);
     outline-offset: var(--Btn-outline-offset);
     background: radial-gradient(
-        120% 150% at 80% 0%,
+        var(--Btn-gradient-width) var(--Btn-gradient-height) at var(--Btn-gradient-x) var(--Btn-gradient-y),
         var(--Btn-surface-top),
         var(--Btn-surface-bottom)
     );

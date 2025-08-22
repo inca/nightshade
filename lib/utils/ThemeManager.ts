@@ -1,4 +1,14 @@
+import { Plugin, reactive } from 'vue';
+
 export type ThemeToken = 'light' | 'dark' | 'auto';
+
+export const themePlugin: Plugin = {
+    install(app) {
+        const themeManager = reactive(new ThemeManager());
+        app.provide('themeManager', themeManager);
+        themeManager.init();
+    }
+};
 
 export class ThemeManager {
 

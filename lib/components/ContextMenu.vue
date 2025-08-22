@@ -58,10 +58,13 @@
                             <div class="ItemTitle">
                                 {{ item.title }}
                             </div>
-                            <i
-                                v-if="item.checked"
-                                class="CheckIcon"
-                                :class="iconCheck" />
+                            <template v-if="item.checked">
+                                <slot name="iconCheck">
+                                    <i
+                                        class="CheckIcon"
+                                        :class="iconCheck" />
+                                </slot>
+                            </template>
                         </div>
                         <div
                             v-if="item.description"
@@ -110,7 +113,7 @@ export default {
     computed: {
 
         iconCheck() {
-            return this.icons?.check ?? 'fas fa-check';
+            return this.$nightshadeIcons?.check ?? 'fas fa-check';
         }
 
     },
